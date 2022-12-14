@@ -1,0 +1,9 @@
+.Hero{
+    height: 85vh;
+    background-image: url("../../content/images/back.png");
+    /* object-fit: cover; */
+    /* width: 100%; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
