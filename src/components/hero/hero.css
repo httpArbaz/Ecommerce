@@ -113,4 +113,11 @@
     
 }
 
+.heroButton{
+  width: 140px;
+  padding: 12px;
+  border-radius: 1.5rem;
+  margin-top: 20px;
+}
+
 }
