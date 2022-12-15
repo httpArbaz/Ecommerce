@@ -1,9 +1,116 @@
-.Hero{
-    height: 85vh;
-    background-image: url("../../content/images/back.png");
-    /* object-fit: cover; */
-    /* width: 100%; */
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.Hero {
+  height: 85vh;
+  background-image: url("../../content/images/back.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20vh;
+}
+
+.heroContent {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.HeroTypoCont {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.HeroHead {
+  font-size: 45px;
+  line-height: 45px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.heroTitle{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.heroButton{
+    background-color: #116466;
+    color:white;
+    padding: 15px;
+    width: 180px;
+    border: none;
+    border-radius:2rem ;
+    cursor: pointer;
+}
+
+.heroButton:hover{
+  background-color: #f35f5f;
+  
+}
+
+
+@media only  screen and (max-width:1150px){
+  .HeroTypoCont{
+    width: 80%;
+  }
+}
+
+@media only  screen and (max-width:800px){
+
+
+  .heroContent{
+    width: 92%;
+  }
+
+  .HeroTypoCont{
+    width: 80%;
+  }
+
+}
+
+@media only  screen and (max-width:700px){
+  .Hero{
+    padding-top: 15vh;
+  }
+  .HeroHead {
+    font-size: 35px;
+    line-height: 40px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .heroTitle{
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      
+  }
+
+}
+
+@media only  screen and (max-width:500px){
+
+  .Hero{
+    padding-top: 15vh;
+  }
+  .heroContent{
+    width: 92%;
+  }
+
+  .HeroTypoCont{
+    width: 80%;
+  }
+
+
+.HeroHead {
+  font-size: 20px;
+  line-height: 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.heroTitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    
+}
+
 }

@@ -41,12 +41,14 @@ function Hamburger() {
           style={{
             display: "flex",
             flexDirection: "row-reverse",
-            width: "100%",
+            width: "95%",
             paddingRight: "0px",
             background:"transparent" ,
             position:"fixed",
             justifyContent:"space-between",
-            alignItems:"center"
+            alignItems:"center",
+            Margin:"auto"
+
             
           }}
         >

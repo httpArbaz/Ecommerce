@@ -1,0 +1,12 @@
+.anchorIn{
+    cursor:pointer;
+    font-size: 16px;
+    text-decoration: none;
+    color:black;
+    margin-bottom:3px;
+}
+
+.anchorIn:hover{
+    color: #fc5f5f;
+    transition: all .2s linear;
+}
