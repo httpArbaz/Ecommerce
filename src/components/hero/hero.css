@@ -1,5 +1,5 @@
 .Hero {
-  height: 85vh;
+  height: 60vh;
   background-image: url("../../content/images/back.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -23,8 +23,8 @@
 }
 
 .HeroHead {
-  font-size: 45px;
-  line-height: 45px;
+  font-size: 30px;
+  line-height: 35px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -74,8 +74,8 @@
     padding-top: 15vh;
   }
   .HeroHead {
-    font-size: 35px;
-    line-height: 40px;
+    /* font-size: 35px; */
+    /* line-height: 40px; */
     font-family: 'Poppins', sans-serif;
   }
   
@@ -91,6 +91,7 @@
 
   .Hero{
     padding-top: 15vh;
+    height: 50vh;
   }
   .heroContent{
     width: 92%;
