@@ -1,0 +1,91 @@
+.Business{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.businessText{
+    color:#2b2f38;
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    font-size: 35px;
+    
+}
+
+.Business > p {
+    text-align: center;
+    color: #2b2f38;
+}
+
+
+.businessBox{
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    justify-content: space-between;
+}
+
+.Boxes{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 340px;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c6c6c6;
+    /* margin: auto; */
+}
+
+
+.businessIconCircle{
+    /* margin: auto; */
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 4px solid #f35f5f ;   
+}
+
+.icon{
+    margin-top: 38%;
+    margin-left: 35%;
+    color:#116466 ;
+}
+
+.BoxesInside{
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 60%;
+    align-items: center;
+}
+
+.BoxesInside> h3{
+    text-align: center;
+    color:#2b2f38;
+}
+
+
+@media only  screen and (max-width:1200px){
+    .BoxesInside > h3{
+        font-size: 15px;
+        width: 75%;
+    }
+}
+
+
+@media only  screen and (max-width:700px){
+
+    .businessBox{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-between;
+    }
+
+
+    .Boxes{
+        margin-bottom: 30px;
+    }
+    
+
+}

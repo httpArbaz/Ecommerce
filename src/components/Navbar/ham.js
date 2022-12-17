@@ -35,7 +35,7 @@ function Hamburger() {
   };
 
   return (
-    <div style={{}} >
+    <div  >
       <Container maxWidth="lg" disableGutters="true">
         <Toolbar
           style={{
@@ -44,7 +44,7 @@ function Hamburger() {
             width: "95%",
             paddingRight: "0px",
             background:"transparent" ,
-            position:"fixed",
+            position:"absolute",
             justifyContent:"space-between",
             alignItems:"center",
             Margin:"auto"
