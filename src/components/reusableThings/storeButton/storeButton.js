@@ -16,6 +16,8 @@ function StoreButton() {
     setActive(false);
   };
 
+
+  console.log(active)
  
   return (
     <div >
@@ -29,7 +31,7 @@ function StoreButton() {
         onClick={() => setActive(!active)} 
         className="anchor"
       >
-        Store {active === true ? <ArrowDropDownIcon   /> : <ArrowDropUpIcon  />}
+        Store <ArrowDropDownIcon   />
       </a>
 
       {active === true ? (

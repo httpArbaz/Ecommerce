@@ -1,0 +1,218 @@
+.contactMain {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 220px;
+}
+
+.contactMain > h1 {
+  color: #2b2f38;
+  font-family: "Poppins", sans-serif;
+}
+
+.ContactDetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Detail {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.DetailContainer {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.detailBox {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: flex-start;
+}
+
+.heroButton {
+  background-color: #116466;
+  color: white;
+  padding: 15px;
+  width: 180px;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.heroButton:hover {
+  background-color: #f35f5f;
+}
+
+.iconColor {
+  color: #f35f5f;
+}
+
+.boxText {
+  margin-left: 40px;
+}
+
+.detailMap {
+  width: 35%;
+}
+
+.msgText {
+  color: #2b2f38;
+  font-family: "Poppins", sans-serif;
+}
+.boxText > h2 {
+  color: darkslategray;
+}
+
+.boxText > p {
+  color: grey;
+  font-weight: 600;
+}
+
+.success {
+  color: green;
+  text-align: center;
+}
+
+.fail {
+  color: red;
+  text-align: center;
+  width: 80%;
+}
+
+@media only screen and (max-width: 1150px) {
+  .DetailContainer {
+    display: flex;
+    flex-direction: column;
+
+    /* justify-content: space-between; */
+  }
+
+  .ContactDetail {
+    /* justify-content: space-between; */
+    align-items: flex-start;
+  }
+
+  .detailMap {
+    width: 50%;
+  }
+
+  .Detail {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .contactMain {
+    width: 100%;
+  }
+
+  .Detail {
+    width: 100%;
+  }
+
+  .ContactDetail {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+
+  .DetailContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto auto 20px auto;
+    /* justify-content: space-between; */
+  }
+
+  .detailMap {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactMain > h1 {
+    text-align: center;
+  }
+
+  .msgText {
+    text-align: center;
+    width: 100%;
+  }
+
+  .FormContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .detailBox {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .heroButton {
+    width: 140px;
+    padding: 12px;
+    border-radius: 1.5rem;
+    margin-top: 20px;
+  }
+
+  .boxText > h2 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .boxText > p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .contactMain > h1 {
+    font-size: 25px;
+  }
+
+  .msgText {
+    font-size: 25px;
+  }
+  .detailBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 35px;
+  }
+
+  .boxText {
+    margin-left: 0px;
+  }
+
+  .DetailContainer {
+    margin: auto auto 30px auto;
+    /* justify-content: space-between; */
+  }
+
+  .FormContact {
+    margin-top: 50px;
+  }
+
+  .success {
+    color: green;
+    text-align: center;
+    width: 80%;
+  }
+
+  .fail {
+    color: red;
+    text-align: center;
+    width: 80%;
+  }
+}
