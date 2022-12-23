@@ -10,11 +10,12 @@ import Divider from "@mui/material/Divider";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import AddHomeWorkSharpIcon from '@mui/icons-material/AddHomeWorkSharp';
-import LocalGroceryStoreSharpIcon from '@mui/icons-material/LocalGroceryStoreSharp';
-import AutoAwesomeSharpIcon from '@mui/icons-material/AutoAwesomeSharp';
-import ConnectWithoutContactSharpIcon from '@mui/icons-material/ConnectWithoutContactSharp';
+import AddHomeWorkSharpIcon from "@mui/icons-material/AddHomeWorkSharp";
+import LocalGroceryStoreSharpIcon from "@mui/icons-material/LocalGroceryStoreSharp";
+import AutoAwesomeSharpIcon from "@mui/icons-material/AutoAwesomeSharp";
+import ConnectWithoutContactSharpIcon from "@mui/icons-material/ConnectWithoutContactSharp";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 // import {
 //   Link
 // } from "react-router-dom";
@@ -35,7 +36,7 @@ function Hamburger() {
   };
 
   return (
-    <div  >
+    <div>
       <Container maxWidth="lg" disableGutters="true">
         <Toolbar
           style={{
@@ -43,13 +44,11 @@ function Hamburger() {
             flexDirection: "row-reverse",
             width: "95%",
             paddingRight: "0px",
-            background:"transparent" ,
-            position:"absolute",
-            justifyContent:"space-between",
-            alignItems:"center",
-            Margin:"auto"
-
-            
+            background: "transparent",
+            position: "absolute",
+            justifyContent: "space-between",
+            alignItems: "center",
+            Margin: "auto",
           }}
         >
           <IconButton
@@ -59,10 +58,10 @@ function Hamburger() {
             onClick={toggleDrawer(true)}
             style={{
               display: "flex",
-            //   width: "100%",
+              //   width: "100%",
               justifyContent: "space-between",
               flexDirection: "row-reverse",
-              width:"auto"
+              width: "auto",
             }}
             sx={{
               mr: 2,
@@ -76,38 +75,43 @@ function Hamburger() {
             </div>
           </IconButton>
 
-      
           <h2>Etrolly</h2>
           {/* The outside of the drawer */}
-          
+
           {/* <div style={{ backgroundColor: "white)" }}> */}
-            <Drawer
-              PaperProps={{
-                sx: {
-                  backgroundColor: "white",
-                },
+          <Drawer
+            PaperProps={{
+              sx: {
+                backgroundColor: "white",
+              },
+            }}
+            //from which side the drawer slides in
+            anchor="right"
+            //if open is true --> drawer is shown
+            open={open}
+            //function that is called when the drawer should close
+            onClose={toggleDrawer(false)}
+            //function that is called when the drawer should open
+            onOpen={toggleDrawer(true)}
+          >
+            {/* The inside of the drawer */}
+            <Box
+              sx={{
+                p: 2,
+                height: 1,
+                // backgroundColor: "#dbc8ff"
               }}
-              //from which side the drawer slides in
-              anchor="right"
-              //if open is true --> drawer is shown
-              open={open}
-              //function that is called when the drawer should close
-              onClose={toggleDrawer(false)}
-              //function that is called when the drawer should open
-              onOpen={toggleDrawer(true)}
+              className="hamburgerMenu"
+              style={{
+                backgroundColor: "white",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
             >
-              {/* The inside of the drawer */}
-              <Box
-                sx={{
-                  p: 2,
-                  height: 1,
-                  // backgroundColor: "#dbc8ff"
-                }}
-                className="hamburgerMenu"
-                style={{ backgroundColor: "white",display:"flex",flexDirection:"column",justifyContent:"space-between",alignItems:"center" }}
-              >
-                {/* when clicking the icon it calls the function toggleDrawer and closes the drawer by setting the variable open to false */}
-                <Box>
+              {/* when clicking the icon it calls the function toggleDrawer and closes the drawer by setting the variable open to false */}
+              <Box>
                 <IconButton sx={{ mb: 2 }}>
                   <CloseIcon onClick={toggleDrawer(false)} />
                 </IconButton>
@@ -124,7 +128,7 @@ function Hamburger() {
 
                   <ListItemButton>
                     <ListItemIcon>
-                      <LocalGroceryStoreSharpIcon  sx={{ color: "darkGray" }} />
+                      <LocalGroceryStoreSharpIcon sx={{ color: "darkGray" }} />
                     </ListItemIcon>
                     <ListItemText primary="Store" />
                   </ListItemButton>
@@ -135,21 +139,22 @@ function Hamburger() {
                     </ListItemIcon>
                     <ListItemText primary="About Us" />
                   </ListItemButton>
-
-                  <ListItemButton>
-                    <ListItemIcon>
-                      <ConnectWithoutContactSharpIcon  sx={{ color: "darkGray" }} />
-                    </ListItemIcon>
-                    <ListItemText primary="Contact Us" />
-                  </ListItemButton>
-                  
+                  <Link style={{textDecoration:"none" , color:"black"}} to="/contact">
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <ConnectWithoutContactSharpIcon
+                          sx={{ color: "darkGray" }}
+                        />
+                      </ListItemIcon>
+                      <ListItemText primary="Contact Us" />
+                    </ListItemButton>
+                  </Link>
                 </Box>
-             
-                </Box>
-                <h2>Etrolly</h2>
-                {/* {search} */}
               </Box>
-            </Drawer>
+              <h2>Etrolly</h2>
+              {/* {search} */}
+            </Box>
+          </Drawer>
           {/* </div> */}
         </Toolbar>
       </Container>

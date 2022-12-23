@@ -6,10 +6,7 @@ import Hamburger from "./ham.js";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import StoreButton from "../reusableThings/storeButton/storeButton";
-import {
- 
-  Link 
-} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 function Navbar() {
   const matches = useMediaQuery("(max-width:800px)");
