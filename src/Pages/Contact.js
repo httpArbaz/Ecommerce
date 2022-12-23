@@ -5,7 +5,7 @@ import ContactDetail from '../components/contact/contactDetail/contactDetail';
 
  function Contact() {
   return (
-    <div>
+    <div  >
       <ContactHero/>
       <ContactDetail/>
     </div>

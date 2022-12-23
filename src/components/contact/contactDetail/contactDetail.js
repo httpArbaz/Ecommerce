@@ -5,6 +5,8 @@ import TextField from "@mui/material/TextField";
 import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
 
@@ -18,6 +20,10 @@ function ContactDetail() {
   const [email, setEmail] = useState();
   const [subject, setSubject] = useState();
   const [message, setMessage] = useState();
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   const Submit = () => {
     if (!email || !name || !message || !subject) {
@@ -35,11 +41,11 @@ function ContactDetail() {
 
   return (
     <div className="contactMain">
-      <h1>Contact Details</h1>
+      <h1     data-aos="fade-right">Contact Details</h1>
       <div className="ContactDetail">
         <div className="Detail">
           {/* location / email / call boxes */}
-          <div className="DetailContainer">
+          <div     data-aos="fade-top" className="DetailContainer">
             <div className="detailBox">
               <LocationOnIcon className="iconColor" />              
               <div className="boxText">
@@ -68,8 +74,8 @@ function ContactDetail() {
           {/* form */}
 
           <div>
-            <h1 className="msgText">Send Us a Message</h1>
-            <div className="FormContact">
+            <h1     data-aos="fade-right" className="msgText">Send Us a Message</h1>
+            <div     data-aos="fade-top" className="FormContact">
               {success === true ? (
                 <p className="success">
                   Thanks for contacting us! We will be in touch with you

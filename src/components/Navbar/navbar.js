@@ -35,9 +35,9 @@ function Navbar() {
             </a>
 
             <StoreButton />
-            <a href="/" className="anchor">
+            <Link to="/about" className="anchor">
               About Us
-            </a>
+            </Link>
             <Link to="/contact" className="anchor">
               Contact Us
             </Link>
