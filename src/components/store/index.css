@@ -1,0 +1,35 @@
+.StoreHero {
+    height: 60vh;
+    background-image: url("../../content/images/timeline.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 8rem;
+    border-bottom-right-radius: 8rem;
+  }
+  
+  
+  .StoreTitle{
+      text-align: center;
+      font-family: 'Poppins',sans-serif;
+      color: #2b2f38;
+      font-size: 50px;
+  }
+  
+  
+  
+  @media only  screen and (max-width:500px){
+    
+  
+    .contactTitle{
+      font-size: 30px;
+  }
+  
+  
+  }
+  
+  

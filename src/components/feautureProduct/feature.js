@@ -3,11 +3,12 @@ import "./index.css";
 import Product1 from "../../content/images/product1.jpg";
 import Product2 from "../../content/images/product2.jpg"
 import { Rating } from "@mui/material";
+import {Link} from "react-router-dom";
 
-function Feature() {
+function Feature({Title}) {
   return (
     <div className="Feature">
-      <h2 className="FeatureTitle">Feature Products</h2>
+      <h2 className="FeatureTitle">{Title}</h2>
       <div className="FeatureContainer">
 
 
@@ -27,6 +28,13 @@ function Feature() {
 
 
 
+       
+       
+       <Link style={{
+        textDecoration:"none",
+        cursor:"pointer",
+        color:"black"
+       }} to="/item">
         <div className="FeatureBox">
           <img alt="Etrolly" src={Product2} className="FeatureImg" />
           <div className="FeatureDetail">
@@ -40,8 +48,13 @@ function Feature() {
             <p className="featurePrice">$21.00</p>
           </div>
         </div>
+        </Link>
 
-
+        <Link style={{
+        textDecoration:"none",
+        cursor:"pointer",
+        color:"black"
+       }} to="/item">
         <div className="FeatureBox">
           <img alt="Etrolly" src={Product1} className="FeatureImg" />
           <div className="FeatureDetail">
@@ -55,7 +68,14 @@ function Feature() {
             <p className="featurePrice">$21.00</p>
           </div>
         </div>
+        </Link>
 
+      
+        <Link style={{
+        textDecoration:"none",
+        cursor:"pointer",
+        color:"black"
+       }} to="/item">
         <div className="FeatureBox">
           <img alt="Etrolly" src={Product1} className="FeatureImg" />
           <div className="FeatureDetail">
@@ -67,8 +87,14 @@ function Feature() {
             <p className="featurePrice">$21.00</p>
           </div>
         </div>
+        </Link>
 
 
+        <Link style={{
+        textDecoration:"none",
+        cursor:"pointer",
+        color:"black"
+       }} to="/item">
         <div className="FeatureBox">
           <img alt="Etrolly" src={Product2} className="FeatureImg" />
           <div className="FeatureDetail">
@@ -82,8 +108,14 @@ function Feature() {
             <p className="featurePrice">$21.00</p>
           </div>
         </div>
+        </Link>
 
 
+        <Link style={{
+        textDecoration:"none",
+        cursor:"pointer",
+        color:"black"
+       }} to="/item">
         <div className="FeatureBox">
           <img alt="Etrolly" src={Product1} className="FeatureImg" />
           <div className="FeatureDetail">
@@ -96,6 +128,7 @@ function Feature() {
             <p className="featurePrice">$21.00</p>
           </div>
         </div>
+        </Link>
 
 
 

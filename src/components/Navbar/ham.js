@@ -126,12 +126,14 @@ function Hamburger() {
                     <ListItemText primary="Home" />
                   </ListItemButton>
 
+                  <Link style={{textDecoration:"none" , color:"black"}} to="/store">
                   <ListItemButton>
                     <ListItemIcon>
                       <LocalGroceryStoreSharpIcon sx={{ color: "darkGray" }} />
                     </ListItemIcon>
                     <ListItemText primary="Store" />
                   </ListItemButton>
+                  </Link>
                   <Link style={{textDecoration:"none" , color:"black"}} to="/about">
                   <ListItemButton>
                     <ListItemIcon>

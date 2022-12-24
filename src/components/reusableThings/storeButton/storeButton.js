@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import "./index.css";
+import {Link} from "react-router-dom";
+
 
 function StoreButton() {
   const [active, setActive] = useState(false);
@@ -20,42 +22,42 @@ function StoreButton() {
  
   return (
     <div >
-      <a
+      <Link
         style={{
           display: "flex",
           alignItems: "start",
         }}
-        href="#Categories"
+        to="/store"
         onMouseEnter={handleClick}
         onClick={() => setActive(!active)} 
         className="anchor"
       >
         Store <ArrowDropDownIcon   />
-      </a>
+      </Link>
 
       {active === true ? (
         <div onMouseLeave={handleClose} className="menuHover">
-          <a href="/" onClick={handleClose} className="anchorIn ">
+          <Link to="/category" onClick={handleClose} className="anchorIn ">
             {" "}
             Home and Kitchen
-          </a>
-          <a href="/" className="anchorIn ">
+          </Link>
+          <Link to="/category" className="anchorIn ">
             Sports
-          </a>
-          <a href="/" className="anchorIn ">
+          </Link>
+          <Link to="/category" className="anchorIn ">
             {" "}
             Out Door
-          </a>
-          <a href="/" className="anchorIn ">
+          </Link>
+          <Link to="/category" className="anchorIn ">
             Pet Supplies
-          </a>
-          <a href="/" className="anchorIn ">
+          </Link>
+          <Link to="/category" className="anchorIn ">
             {" "}
             Arts and Crafts
-          </a>
-          <a href="/" className="anchorIn ">
+          </Link>
+          <Link to="/category" className="anchorIn ">
             Garden and Outdoor
-          </a>
+          </Link>
         </div>
       ) : null}
     </div>
