@@ -12,6 +12,12 @@ function Feature({Title}) {
       <div className="FeatureContainer">
 
 
+
+      <Link style={{
+        textDecoration:"none",
+        cursor:"pointer",
+        color:"black"
+       }} to="/item">
       <div className="FeatureBox">
           <img alt="Etrolly" src={Product1} className="FeatureImg" />
           <div className="FeatureDetail">
@@ -25,6 +31,8 @@ function Feature({Title}) {
             <p className="featurePrice">$21.00</p>
           </div>
         </div>
+
+        </Link>
 
 
 
