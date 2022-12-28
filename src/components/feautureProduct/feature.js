@@ -1,151 +1,81 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import "./index.css";
-import Product1 from "../../content/images/product1.jpg";
-import Product2 from "../../content/images/product2.jpg"
 import { Rating } from "@mui/material";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import { data } from "../../static/products.static";
+import { useParams } from "react-router-dom";
 
-function Feature({Title}) {
+function Feature() {
+  const { slug } = useParams();
+  const [statecategory, setStataeCategory] = useState("");
+
+  const singalCategory = data.filter((data) => {
+    return data.category.replace(/\s/g, "").toLowerCase() === slug;
+  });
+  // setStataeCategory(singalCategory[0].category)
+
+
+  console.log(slug, "nav sliugs");
+ useEffect(() => {
+  if(singalCategory.length){
+
+  setStataeCategory(singalCategory[0].category)
+  }
+ }, [slug,singalCategory])
+ 
+console.log(statecategory,"statae")
+
+
   return (
     <div className="Feature">
-      <h2 className="FeatureTitle">{Title}</h2>
+      <h2 className="FeatureTitle">{statecategory}</h2>
       <div className="FeatureContainer">
-
-
-
-      <Link style={{
-        textDecoration:"none",
-        cursor:"pointer",
-        color:"black"
-       }} to="/item">
-      <div className="FeatureBox">
-          <img alt="Etrolly" src={Product1} className="FeatureImg" />
-          <div className="FeatureDetail">
-            <p className="featureLabel">Home Supplies</p>
-            <p className="featureDec">
-              Broom and Dustpan Set, Self-Cleaning with Dustpan Teeth, Ideal for
-              Dog Cat Pets Home Use, Super Long Handle Upright Stand Up Broom
-              and Dustpan Set (Gray&Orange)
-            </p>
-            <Rating name="read-only" value={4} readOnly />
-            <p className="featurePrice">$21.00</p>
-          </div>
-        </div>
-
-        </Link>
-
-
-
-       
-       
-       <Link style={{
-        textDecoration:"none",
-        cursor:"pointer",
-        color:"black"
-       }} to="/item">
-        <div className="FeatureBox">
-          <img alt="Etrolly" src={Product2} className="FeatureImg" />
-          <div className="FeatureDetail">
-            <p className="featureLabel">Home Supplies</p>
-            <p className="featureDec">
-              Broom and Dustpan Set, Self-Cleaning with Dustpan Teeth, Ideal for
-              Dog Cat Pets Home Use, Super Long Handle Upright Stand Up Broom
-              and Dustpan Set (Gray&Orange)
-            </p>
-            <Rating name="read-only" value={4} readOnly />
-            <p className="featurePrice">$21.00</p>
-          </div>
-        </div>
-        </Link>
-
-        <Link style={{
-        textDecoration:"none",
-        cursor:"pointer",
-        color:"black"
-       }} to="/item">
-        <div className="FeatureBox">
-          <img alt="Etrolly" src={Product1} className="FeatureImg" />
-          <div className="FeatureDetail">
-            <p className="featureLabel">Home Supplies</p>
-            <p className="featureDec">
-              Broom and Dustpan Set, Self-Cleaning with Dustpan Teeth, Ideal for
-              Dog Cat Pets Home Use, Super Long Handle Upright Stand Up Broom
-              and Dustpan Set (Gray&Orange)
-            </p>
-            <Rating name="read-only" value={4} readOnly />
-            <p className="featurePrice">$21.00</p>
-          </div>
-        </div>
-        </Link>
-
-      
-        <Link style={{
-        textDecoration:"none",
-        cursor:"pointer",
-        color:"black"
-       }} to="/item">
-        <div className="FeatureBox">
-          <img alt="Etrolly" src={Product1} className="FeatureImg" />
-          <div className="FeatureDetail">
-            <p className="featureLabel">Home Supplies</p>
-            <p className="featureDec">
-              Broom and Dustpan Set, 
-            </p>
-            <Rating name="read-only" value={4} readOnly />
-            <p className="featurePrice">$21.00</p>
-          </div>
-        </div>
-        </Link>
-
-
-        <Link style={{
-        textDecoration:"none",
-        cursor:"pointer",
-        color:"black"
-       }} to="/item">
-        <div className="FeatureBox">
-          <img alt="Etrolly" src={Product2} className="FeatureImg" />
-          <div className="FeatureDetail">
-            <p className="featureLabel">Home Supplies</p>
-            <p className="featureDec">
-              Broom and Dustpan Set, Self-Cleaning with Dustpan Teeth, Ideal for
-              Dog Cat Pets Home Use, Super Long Handle Upright Stand Up Broom
-              and Dustpan Set (Gray&Orange)
-            </p>
-            <Rating name="read-only" value={4} readOnly />
-            <p className="featurePrice">$21.00</p>
-          </div>
-        </div>
-        </Link>
-
-
-        <Link style={{
-        textDecoration:"none",
-        cursor:"pointer",
-        color:"black"
-       }} to="/item">
-        <div className="FeatureBox">
-          <img alt="Etrolly" src={Product1} className="FeatureImg" />
-          <div className="FeatureDetail">
-            <p className="featureLabel">Home Supplies</p>
-            <p className="featureDec">
-              Broom and Dustpan Set, Self-Cleaning with Dustpan Teeth, Ideal for
-              Dog Cat Pets Home Use,
-            </p>
-            <Rating name="read-only" value={4} readOnly />
-            <p className="featurePrice">$21.00</p>
-          </div>
-        </div>
-        </Link>
-
-
-
-
-
-
-    
-
-
+        {
+           singalCategory.length ? singalCategory.map((data) => {
+           
+              return (
+                <Link
+                  style={{
+                    textDecoration: "none",
+                    cursor: "pointer",
+                    color: "black",
+                  }}
+                  to={`/category/${data.productName.replace(/\s/g, "")}`}
+                >
+                  <div className="FeatureBox">
+                    <img alt="Etrolly" src={data.img} className="FeatureImg" />
+                    <div className="FeatureDetail">
+                      <p className="featureLabel">{data.category}</p>
+                      <p className="featureDec">{data.productDescription}</p>
+                      <Rating name="read-only" value={4} readOnly />
+                      <p className="featurePrice">{data.price}</p>
+                    </div>
+                  </div>
+                </Link>
+              );
+            }):
+            data.map((data) => {
+              return (
+                <Link
+                  style={{
+                    textDecoration: "none",
+                    cursor: "pointer",
+                    color: "black",
+                  }}
+                  to={`/category/${data.productName.replace(/\s/g, "")}`}
+                >
+                  <div className="FeatureBox">
+                    <img alt="Etrolly" src={data.img} className="FeatureImg" />
+                    <div className="FeatureDetail">
+                      <p className="featureLabel">{data.category}</p>
+                      <p className="featureDec">{data.productDescription}</p>
+                      <Rating name="read-only" value={4} readOnly />
+                      <p className="featurePrice">{data.price}</p>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
       </div>
     </div>
   );

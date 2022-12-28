@@ -7,8 +7,7 @@ function Store() {
   return (
     <div style={{backgroundColor:"#f5f5f5",paddingBottom:"120px"}}>
     <StoreHero/>
-    <Feature Title="Feature Products"/>
-    <Feature Title="Our Collection" />
+    <Feature />
     </div>
   )
 }

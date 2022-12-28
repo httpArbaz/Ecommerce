@@ -30,6 +30,8 @@
 .FeatureImg {
   object-fit: cover;
   width: 100%;
+  height: 400px;
+  object-fit: contain;
   /* height: 70%;
     width: 100%; */
 }
@@ -79,5 +81,8 @@
   .FeatureTitle{
 
     font-size: 35px;
+}
+.FeatureImg{
+  height: 200px;
 }
 }

@@ -14,7 +14,7 @@ import Footer from "../components/Footer/footer"
       <Hero/>
       <Special/>
       <Business/>
-      <Feature Title="Feature Products"/>
+      <Feature/>
       <Timeline/>
       <Footer/>
     </>

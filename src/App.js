@@ -10,6 +10,7 @@ import Category from './Pages/category';
 import Item from './Pages/item';
 
 function App() {
+  console.log(window.location.href,"href")
   return (
     <BrowserRouter>
      <Layout>
@@ -18,8 +19,8 @@ function App() {
         <Route path ="/contact" element={<Contact/>}/>
         <Route path ="/about" element={<About/>}/>
         <Route path ="/store" element={<Store/>}/>
-        <Route path ="/category" element={<Category/>}/>
-        <Route path ="/item" element={<Item/>}/>
+        <Route path ="/:slug" element={<Category/>}/>
+        <Route path ="/category/:slug" element={<Item/>}/>
       </Routes>
      </Layout>
      </BrowserRouter>

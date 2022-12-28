@@ -1,27 +1,23 @@
 import React, { useState } from "react";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import "./index.css";
-import {Link} from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 function StoreButton() {
   const [active, setActive] = useState(false);
 
   const handleClick = (event) => {
-
     setActive(true);
   };
 
   const handleClose = () => {
-
     setActive(false);
   };
 
+  console.log(active);
 
-  console.log(active)
- 
   return (
-    <div >
+    <div>
       <Link
         style={{
           display: "flex",
@@ -29,34 +25,30 @@ function StoreButton() {
         }}
         to="/store"
         onMouseEnter={handleClick}
-        onClick={() => setActive(!active)} 
+        onClick={() => setActive(!active)}
         className="anchor"
       >
-        Store <ArrowDropDownIcon   />
+        Store <ArrowDropDownIcon />
       </Link>
 
       {active === true ? (
         <div onMouseLeave={handleClose} className="menuHover">
-          <Link to="/category" onClick={handleClose} className="anchorIn ">
+          <Link
+            to="/kitchensupplies"
+            onClick={handleClose}
+            className="anchorIn "
+          >
             {" "}
-            Home and Kitchen
+            Kitchen Supplies
           </Link>
-          <Link to="/category" className="anchorIn ">
-            Sports
+          <Link to="/indoor&outdoorsupplies" className="anchorIn ">
+            Indoor & Outdoor Supplies
           </Link>
-          <Link to="/category" className="anchorIn ">
-            {" "}
-            Out Door
-          </Link>
-          <Link to="/category" className="anchorIn ">
+          <Link to="/petsupplies" className="anchorIn ">
             Pet Supplies
           </Link>
-          <Link to="/category" className="anchorIn ">
-            {" "}
-            Arts and Crafts
-          </Link>
-          <Link to="/category" className="anchorIn ">
-            Garden and Outdoor
+          <Link to="/homesupplies" className="anchorIn ">
+            Home Supplies
           </Link>
         </div>
       ) : null}

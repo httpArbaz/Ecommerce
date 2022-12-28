@@ -25,6 +25,9 @@ function Hamburger() {
   const [open, setState] = useState(false);
 
   const toggleDrawer = (open) => (event) => {
+
+
+    
     if (
       event.type === "keydown" &&
       (event.key === "Tab" || event.key === "Shift")
