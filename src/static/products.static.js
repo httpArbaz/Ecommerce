@@ -45,7 +45,7 @@ export const data = [
     productDescription:
       "HuggiePup by Pets Know Best- Cuddly Puppy Behavioral Aid Toy, Great for Crate Training- Pulsing Heartbeat, Heating Pack- Golden Dog",
     img: I3,
-    price: 30,
+    price: 26.5,
     detailDescription: "",
   },
   {
@@ -54,7 +54,7 @@ export const data = [
     productDescription:
       "Best Pet Supplies Dog Poop Bags for Waste Refuse Cleanup, Doggy Roll Replacements for Outdoor Puppy Walking and Travel, Leak Proof and Tear Resistant, Thick...",
     img: I4,
-    price: 30,
+    price: 24.5,
     detailDescription: "",
   },
   {
@@ -63,7 +63,7 @@ export const data = [
     productDescription:
       "PetSafe Multi-Tier Pet Fountain – Large Waterer Great for Cats and Dogs – 2 Heights to Drink From – Great for Senior Pets – 100 Oz Water Capacity – Fresh, Filtered Water",
     img: I5,
-    price: 30,
+    price: 45.76,
     detailDescription: "",
   },
 
@@ -73,7 +73,7 @@ export const data = [
     productDescription:
       "PetSafe Replacement Grass for Large Pet Loo Portable Indoor Dog Potty Training System - Artificial Grass for Dogs, Speedy Drainage, Easy to Clean - Great Alternative to Puppy Pads or Dog Pee Pads",
     img: I6,
-    price: 30,
+    price: 23.78,
     detailDescription: "",
   },
   {
@@ -81,7 +81,7 @@ export const data = [
     productName: "Bliss Hammocks BH-400C-HP",
     productDescription: "Bliss Hammocks BH-400C-HP, 40' Wide, Hampton",
     img: I7,
-    price: 30,
+    price: 54.78,
     detailDescription: "",
   },
   {
@@ -90,7 +90,7 @@ export const data = [
     productDescription:
       "Lewis N. Clark Brushed Twill Hanging Toiletry Kit Bag for Travel Accessories, Shampoo, Cosmetics + Personal Items, Gray, One_Size",
     img: I8,
-    price: 30,
+    price: 23.67,
     detailDescription: "",
   },
   {
@@ -99,7 +99,7 @@ export const data = [
     productDescription:
       "Jungle Gym Kingdom Swing Set Hangers - 2 Heavy Duty Brackets with Locking Snap Hooks for Porch, Patio, Playground - Indoor/Outdoor Hardware & Accessories",
     img: I9,
-    price: 30,
+    price: 67.88,
     detailDescription: "",
   },
   {
@@ -108,7 +108,7 @@ export const data = [
     productDescription:
       "RAD Cycle Products Adjustable Bike Trainer Fitness Desk Portable Workstation Standing Desk",
     img: I10,
-    price: 30,
+    price: 34.55,
     detailDescription: "",
   },
 
@@ -118,7 +118,7 @@ export const data = [
     productDescription:
       "Cuisinart C55-12PCKSAM 12-Piece Ceramic Coated Stainless Steel Knives, Comes with 6-Blades and 6-Blade Guards",
     img: I11,
-    price: 30,
+    price: 44.66,
     detailDescription:
       "QUALITY and PRECISION: These high-quality stainless steel blades are extremely sharp with an array of colors that represent each knife in the set EASY TO USE: Nonstick ceramic coating makes is easy to slice your food and keeps the blades sharp for a long time COLOR CODING: Color coding reduces the risk of cross-use during food preparation SET INCLUDES: 8-inch Chef knife w/ Blade Guard, 8-inch Slicing knife w/ Blade Guard, 8-inch Serrated bread knife w/ Blade Guard, 7-inch Santorum knife w/ Blade Guard, 6.5-inch Utility knife w/ Blade Guard, 3.5-inch Paring knife w/ Blade Guard LIMITED LIFETIME WARRANTY: Your Cuisinart cookware is warranted to be free of defects in material and workmanship under normal home use",
   },
@@ -128,7 +128,7 @@ export const data = [
     productDescription:
       "Silicone Cooking Utensil Set, 14pcs Kitchen Utensils Set Non-stick Heat Resistant Cookware Copper Stainless Steel Handle",
     img: I12,
-    price: 30,
+    price: 44.44,
     detailDescription: "",
   },
   {

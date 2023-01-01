@@ -70,7 +70,11 @@ console.log(active,"buttonstate")
       {/*description and reviews columns  */}
       <div className="itemspecification">
         <h3> Detail Description </h3>
-        <ul>
+
+        <p>
+          {matchItem.detailDescription}
+        </p>
+        {/* <ul>
           <li className="li">
             Attractive modern finish, sleek seamless design.
           </li>
@@ -96,7 +100,7 @@ console.log(active,"buttonstate")
             Will last a LIFETIME. Exceptional value and an excellent gift for
             your kitchen.
           </li>
-        </ul>
+        </ul> */}
 
         {/* <h3>description</h3> */}
       </div>

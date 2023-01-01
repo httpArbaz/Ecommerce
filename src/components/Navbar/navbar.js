@@ -25,8 +25,9 @@ function Navbar() {
         <Hamburger />
       ) : (
         <div className="Navbar">
-  
+  <Link to="/">
           <img alt="etrolly"  height={100} width={100} src={Etrolly}/>
+          </Link>
           <div data-aos="fade-left" className="RightNavigations">
             <a href="/" className="anchor">
               Home

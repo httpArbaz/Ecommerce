@@ -110,7 +110,9 @@ function Hamburger() {
           </div>
 
           {/* <h2>Etrolly</h2> */}
+          <Link to="/">
           <img style={{marginLeft:"-20px"}} alt="etrolly" src={Etrolly} height={100} width={100} />
+          </Link>
           {/* The outside of the drawer */}
 
           {/* <div style={{ backgroundColor: "white)" }}> */}
@@ -154,14 +156,18 @@ function Hamburger() {
                 <Divider sx={{ mb: 2 }} />
 
                 <Box sx={{ mb: 2 }}>
+
+                  <Link  onClick={toggleDrawer(false)}     style={{ textDecoration: "none", color: "black" }} to="/">
                   <ListItemButton>
                     <ListItemIcon>
                       <AddHomeWorkSharpIcon sx={{ color: "darkGray" }} />
                     </ListItemIcon>
                     <ListItemText primary="Home" />
                   </ListItemButton>
+                  </Link>
 
                   <Link
+                  onClick={toggleDrawer(false)}
                     style={{ textDecoration: "none", color: "black" }}
                     to="/store"
                   >
@@ -175,6 +181,7 @@ function Hamburger() {
                     </ListItemButton>
                   </Link>
                   <Link
+                  onClick={toggleDrawer(false)}
                     style={{ textDecoration: "none", color: "black" }}
                     to="/about"
                   >
@@ -186,6 +193,7 @@ function Hamburger() {
                     </ListItemButton>
                   </Link>
                   <Link
+                  onClick={toggleDrawer(false)}
                     style={{ textDecoration: "none", color: "black" }}
                     to="/contact"
                   >
@@ -200,7 +208,8 @@ function Hamburger() {
                   </Link>
                 </Box>
               </Box>
-              <h2>Etrolly</h2>
+              <img src={Etrolly} alt="etrolly" height={100} width={100}/>
+              {/* <h2>Etrolly</h2> */}
               {/* {search} */}
             </Box>
           </Drawer>
