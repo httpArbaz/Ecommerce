@@ -58,6 +58,7 @@ function Hamburger() {
         >
           <div style={{ display: "flex", alignItems: "center" }}>
             <div style={{ marginRight: "10px" }}>
+              <Link to="/cart">
               <AddShoppingCartSharpIcon
                 className="anchor"
                 style={{
@@ -79,6 +80,7 @@ function Hamburger() {
               >
                 {value.length}
               </p>
+              </Link>
             </div>
 
             <IconButton
