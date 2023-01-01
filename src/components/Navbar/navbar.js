@@ -25,16 +25,8 @@ function Navbar() {
         <Hamburger />
       ) : (
         <div className="Navbar">
-          {/* <h2
-            style={{
-              color: "#116466",
-            }}
-            data-aos="fade-right"
-          >
-            Etrolly
-
-          </h2> */}
-          <img  height={100} width={100} src={Etrolly}/>
+  
+          <img alt="etrolly"  height={100} width={100} src={Etrolly}/>
           <div data-aos="fade-left" className="RightNavigations">
             <a href="/" className="anchor">
               Home

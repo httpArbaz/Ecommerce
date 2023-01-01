@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from "react";
+import React from "react";
 import "./index.css";
 import { Rating } from "@mui/material";
 import Divider from "@mui/material/Divider";

@@ -9,13 +9,13 @@ import Autocomplete from "@mui/material/Autocomplete";
 import Box from "@mui/material/Box";
 import useMediaQuery from '@mui/material/useMediaQuery';
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
+// function createData(name, calories, fat, carbs, protein) {
+//   return { name, calories, fat, carbs, protein };
+// }
 
-const rows = [
-  { name: "Frozen yoghurt", product: 159, categories: "pets", price: 25 },
-];
+// const rows = [
+//   { name: "Frozen yoghurt", product: 159, categories: "pets", price: 25 },
+// ];
 
 function CartComponent() {
   const [billError,setBillError] = useState(false)
@@ -101,7 +101,7 @@ function CartComponent() {
                           onClick={() => handleCancel(row.productName)}
                           className="cancelIcon"
                         />{" "}
-                        <img height={100} src={row.img} />
+                        <img alt="etrolly" height={100} src={row.img} />
                       </td>
                       <td>{row.productName}</td>
                       <td>{row.price}$</td>
