@@ -16,19 +16,16 @@ import AutoAwesomeSharpIcon from "@mui/icons-material/AutoAwesomeSharp";
 import ConnectWithoutContactSharpIcon from "@mui/icons-material/ConnectWithoutContactSharp";
 import "./navbar.css";
 import { Link } from "react-router-dom";
-import Etrolly from "../../content/images/etr.png"
+import Etrolly from "../../content/images/etr.png";
 import AddShoppingCartSharpIcon from "@mui/icons-material/AddShoppingCartSharp";
-import { useSelector } from 'react-redux';
-import { selectCount } from '../../features/counter/counterSlice';
+import { useSelector } from "react-redux";
+import { selectCount } from "../../features/counter/counterSlice";
 
 function Hamburger() {
   const [open, setState] = useState(false);
-  const {value} = useSelector(selectCount);
+  const { value } = useSelector(selectCount);
 
   const toggleDrawer = (open) => (event) => {
-
-
-    
     if (
       event.type === "keydown" &&
       (event.key === "Tab" || event.key === "Shift")
@@ -40,8 +37,12 @@ function Hamburger() {
   };
 
   return (
-    <div >
-      <Container style={{position:"absolute",zIndex:"1"}} maxWidth="lg" disableGutters="true">
+    <div>
+      <Container
+        style={{ position: "absolute", zIndex: "1" }}
+        maxWidth="lg"
+        disableGutters="true"
+      >
         <Toolbar
           style={{
             display: "flex",
@@ -55,38 +56,55 @@ function Hamburger() {
             Margin: "auto",
           }}
         >
-
-          <div style={{display:"flex",alignItems:"center"}}>
-            <div style={{marginRight:"10px"}}>
-<AddShoppingCartSharpIcon     className="anchor"
-              style={{ color: "#ad449b",border:"2px solid",padding:"3px" }} />
-                          <p style={{position:"absolute",bottom:"40px",marginLeft:"2.5vh",color:"black",fontSize:"16px",fontWeight:"bolder"}}>{value.length}</p>
-                          </div>
-
-          <IconButton
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            onClick={toggleDrawer(true)}
-            style={{
-              display: "flex",
-              //   width: "100%",
-              justifyContent: "space-between",
-              flexDirection: "row-reverse",
-              width: "auto",
-              color:"#ad449b"
-            }}
-            sx={{
-              mr: 2,
-              display: {
-                md: "block",
-              },
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "self-end" }}>
-              <MenuIcon sx={{ fontSize: "40px" }} />
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <div style={{ marginRight: "10px" }}>
+              <AddShoppingCartSharpIcon
+                className="anchor"
+                style={{
+                  color: "#406caa",
+                  // border: "2px solid",
+                  padding: "3px",
+                  marginTop:"4px"
+                }}
+              />
+              <p
+                style={{
+                  position: "absolute",
+                  bottom: "40px",
+                  marginLeft: "2.5vh",
+                  color: "black",
+                  fontSize: "16px",
+                  fontWeight: "bolder",
+                }}
+              >
+                {value.length}
+              </p>
             </div>
-          </IconButton>
+
+            <IconButton
+              edge="start"
+              color="inherit"
+              aria-label="open drawer"
+              onClick={toggleDrawer(true)}
+              style={{
+                display: "flex",
+                //   width: "100%",
+                justifyContent: "space-between",
+                flexDirection: "row-reverse",
+                width: "auto",
+                color: "#406caa",
+              }}
+              sx={{
+                mr: 2,
+                display: {
+                  md: "block",
+                },
+              }}
+            >
+              <div style={{ display: "flex", alignItems: "self-end" }}>
+                <MenuIcon sx={{ fontSize: "40px" }} />
+              </div>
+            </IconButton>
           </div>
 
           {/* <h2>Etrolly</h2> */}
@@ -141,23 +159,34 @@ function Hamburger() {
                     <ListItemText primary="Home" />
                   </ListItemButton>
 
-                  <Link style={{textDecoration:"none" , color:"black"}} to="/store">
-                  <ListItemButton>
-                    <ListItemIcon>
-                      <LocalGroceryStoreSharpIcon sx={{ color: "darkGray" }} />
-                    </ListItemIcon>
-                    <ListItemText primary="Store" />
-                  </ListItemButton>
+                  <Link
+                    style={{ textDecoration: "none", color: "black" }}
+                    to="/store"
+                  >
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <LocalGroceryStoreSharpIcon
+                          sx={{ color: "darkGray" }}
+                        />
+                      </ListItemIcon>
+                      <ListItemText primary="Store" />
+                    </ListItemButton>
                   </Link>
-                  <Link style={{textDecoration:"none" , color:"black"}} to="/about">
-                  <ListItemButton>
-                    <ListItemIcon>
-                      <AutoAwesomeSharpIcon sx={{ color: "darkGray" }} />
-                    </ListItemIcon>
-                    <ListItemText primary="About Us" />
-                  </ListItemButton>
+                  <Link
+                    style={{ textDecoration: "none", color: "black" }}
+                    to="/about"
+                  >
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <AutoAwesomeSharpIcon sx={{ color: "darkGray" }} />
+                      </ListItemIcon>
+                      <ListItemText primary="About Us" />
+                    </ListItemButton>
                   </Link>
-                  <Link style={{textDecoration:"none" , color:"black"}} to="/contact">
+                  <Link
+                    style={{ textDecoration: "none", color: "black" }}
+                    to="/contact"
+                  >
                     <ListItemButton>
                       <ListItemIcon>
                         <ConnectWithoutContactSharpIcon
