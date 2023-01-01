@@ -110,7 +110,7 @@ function Hamburger() {
           </div>
 
           {/* <h2>Etrolly</h2> */}
-          <img alt="etrolly" src={Etrolly} height={100} width={100} />
+          <img style={{marginLeft:"-20px"}} alt="etrolly" src={Etrolly} height={100} width={100} />
           {/* The outside of the drawer */}
 
           {/* <div style={{ backgroundColor: "white)" }}> */}
