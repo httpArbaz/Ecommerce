@@ -34,8 +34,8 @@
     
 }
 
-.heroButton{
-    background-color: #116466;
+.themeButton{
+    background-color: #406caa;
     color:white;
     padding: 15px;
     width: 180px;
@@ -44,8 +44,8 @@
     cursor: pointer;
 }
 
-.heroButton:hover{
-  background-color: #f35f5f;
+.themeButton:hover{
+  background-color: #ad449b;
   
 }
 

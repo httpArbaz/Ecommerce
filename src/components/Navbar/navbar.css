@@ -1,5 +1,5 @@
 .Navbar{
-    width: 80%;
+    width: 85%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -28,7 +28,7 @@ z-index: 1;
 }
 
 .anchor:hover{
-    color: #fc5f5f;
+    color: #ad449b;
     transition: all .2s linear;
 }
 

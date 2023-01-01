@@ -18,7 +18,7 @@ function Hero() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco
           </h2>
-          <button data-aos="fade-right" className="heroButton">Shop Now</button>
+          <button data-aos="fade-right" className="themeButton">Shop Now</button>
         </div> 
       </div>
     </div>

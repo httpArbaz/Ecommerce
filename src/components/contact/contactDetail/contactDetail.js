@@ -50,7 +50,7 @@ function ContactDetail() {
               <LocationOnIcon className="iconColor" />              
               <div className="boxText">
                 <h2>Our Location</h2>
-                <p>Simi Valley, California, 93065</p>
+                <p>ETROLLY LLC, 35644 AVALON PARK EAST BLVD SITE 1-A896 ORLANDO, FL 32828-7365 </p>
               </div>
             </div>
 
@@ -66,7 +66,7 @@ function ContactDetail() {
               <LocalPhoneIcon className="iconColor"/>
               <div className="boxText">
                 <h2>Our Email </h2>
-                <p>Abcdefgh@gmail.com</p>
+                <p>etrollystore@gmail.com</p>
               </div>
             </div>
           </div>

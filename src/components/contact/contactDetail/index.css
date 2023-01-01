@@ -37,7 +37,7 @@
 }
 
 .heroButton {
-  background-color: #116466;
+  background-color: #406caa;
   color: white;
   padding: 15px;
   width: 180px;
@@ -47,11 +47,11 @@
 }
 
 .heroButton:hover {
-  background-color: #f35f5f;
+  background-color: #ad449b;
 }
 
 .iconColor {
-  color: #f35f5f;
+  color: #406caa;
 }
 
 .boxText {
@@ -108,7 +108,7 @@
   }
 }
 
-@media only screen and (max-width: 0px) {
+@media only screen and (max-width: 800px) {
   .contactMain {
     width: 100%;
   }

@@ -6,7 +6,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import Divider from '@mui/material/Divider';
 import Aos from "aos";
 import "aos/dist/aos.css";
-
+import Etrolly from "../../content/images/etr.png"
 function Footer() {
     useEffect(() => {
         Aos.init({ duration: 2000 });
@@ -49,9 +49,10 @@ function Footer() {
 
         <Divider/>
         <div style={{margin:"auto"}} className='menuChild'>
-                <h2 style={{
+                {/* <h2 style={{
                     color:"#116466"
-                }}>Etrolly</h2>
+                }}>Etrolly</h2> */}
+                <img src={Etrolly} alt="etrolly" height={100} width={100} />
             </div>
         <div style={{marginBottom:"55px"}} className='FooterMenu'>
             <p data-aos="fade-right" className='childTitle highlight'> ©2023 <p style={{fontWeight:"600",marginLeft:"5px"}}> {" "}Etrolly </p></p>

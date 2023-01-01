@@ -16,13 +16,14 @@ import AutoAwesomeSharpIcon from "@mui/icons-material/AutoAwesomeSharp";
 import ConnectWithoutContactSharpIcon from "@mui/icons-material/ConnectWithoutContactSharp";
 import "./navbar.css";
 import { Link } from "react-router-dom";
-// import {
-//   Link
-// } from "react-router-dom";
-// import Vogue2 from "../../content/vogue.png"
+import Etrolly from "../../content/images/etr.png"
+import AddShoppingCartSharpIcon from "@mui/icons-material/AddShoppingCartSharp";
+import { useSelector } from 'react-redux';
+import { selectCount } from '../../features/counter/counterSlice';
 
 function Hamburger() {
   const [open, setState] = useState(false);
+  const {value} = useSelector(selectCount);
 
   const toggleDrawer = (open) => (event) => {
 
@@ -54,6 +55,14 @@ function Hamburger() {
             Margin: "auto",
           }}
         >
+
+          <div style={{display:"flex",alignItems:"center"}}>
+            <div style={{marginRight:"10px"}}>
+<AddShoppingCartSharpIcon     className="anchor"
+              style={{ color: "#ad449b",border:"2px solid",padding:"3px" }} />
+                          <p style={{position:"absolute",bottom:"40px",marginLeft:"2.5vh",color:"black",fontSize:"16px",fontWeight:"bolder"}}>{value.length}</p>
+                          </div>
+
           <IconButton
             edge="start"
             color="inherit"
@@ -65,6 +74,7 @@ function Hamburger() {
               justifyContent: "space-between",
               flexDirection: "row-reverse",
               width: "auto",
+              color:"#ad449b"
             }}
             sx={{
               mr: 2,
@@ -77,8 +87,10 @@ function Hamburger() {
               <MenuIcon sx={{ fontSize: "40px" }} />
             </div>
           </IconButton>
+          </div>
 
-          <h2>Etrolly</h2>
+          {/* <h2>Etrolly</h2> */}
+          <img alt="etrolly" src={Etrolly} height={100} width={100} />
           {/* The outside of the drawer */}
 
           {/* <div style={{ backgroundColor: "white)" }}> */}

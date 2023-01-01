@@ -102,3 +102,10 @@
     border-bottom-right-radius: 6rem;
   }
 }
+
+
+@media only screen and (max-width: 500px) {
+  .AboutTitle {
+    font-size: 30px;
+  }
+}

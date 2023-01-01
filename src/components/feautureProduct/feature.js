@@ -70,7 +70,7 @@ console.log(statecategory,"statae")
                       <p className="featureLabel">{data.category}</p>
                       <p className="featureDec">{data.productDescription}</p>
                       <Rating name="read-only" value={4} readOnly />
-                      <p className="featurePrice">{data.price}</p>
+                      <p className="featurePrice">{data.price}$</p>
                     </div>
                   </div>
                 </Link>

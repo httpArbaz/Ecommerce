@@ -35,7 +35,7 @@
 }
 
 .heroButtonItem {
-  background-color: #116466;
+  background-color: #406caa;
   color: white;
   padding: 15px;
   width: 180px;
@@ -46,7 +46,7 @@
 }
 
 .heroButtonItem:hover {
-  background-color: #f35f5f;
+  background-color: #ad449b;
 }
 
 .itemDetailBox > h2 {

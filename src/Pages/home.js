@@ -10,13 +10,13 @@ import Footer from "../components/Footer/footer"
  function Home() {
   return (
     <>
-     <Navbar/>
+     {/* <Navbar/> */}
       <Hero/>
       <Special/>
       <Business/>
       <Feature/>
       <Timeline/>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   )
 }

@@ -8,6 +8,7 @@ import About from './Pages/about';
 import Store from './Pages/store';
 import Category from './Pages/category';
 import Item from './Pages/item';
+import Cart from './Pages/cart';
 
 function App() {
   console.log(window.location.href,"href")
@@ -21,6 +22,7 @@ function App() {
         <Route path ="/store" element={<Store/>}/>
         <Route path ="/:slug" element={<Category/>}/>
         <Route path ="/category/:slug" element={<Item/>}/>
+        <Route path ="/cart" element={<Cart/>}/>
       </Routes>
      </Layout>
      </BrowserRouter>
