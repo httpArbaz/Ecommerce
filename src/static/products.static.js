@@ -46,7 +46,7 @@ export const data = [
       "HuggiePup by Pets Know Best- Cuddly Puppy Behavioral Aid Toy, Great for Crate Training- Pulsing Heartbeat, Heating Pack- Golden Dog",
     img: I3,
     price: 26.5,
-    detailDescription: "",
+    detailDescription: "The HuggiePup is just what your pet needs to feel a sense of comfort & calmness. Designed by the pet lovers at Pets Know Best. HuggiePup uses a life-like heartbeat and warm heat pack to gently calm pets down! Helps relieve nerves and doubt with physical touch and warmth. Machine washable and easily set up to comfort your pet!",
   },
   {
     category: "Pet Supplies",
@@ -55,7 +55,7 @@ export const data = [
       "Best Pet Supplies Dog Poop Bags for Waste Refuse Cleanup, Doggy Roll Replacements for Outdoor Puppy Walking and Travel, Leak Proof and Tear Resistant, Thick...",
     img: I4,
     price: 24.5,
-    detailDescription: "",
+    detailDescription: "BPS - Extra Thick Waste Poop Bags with Dispenser -Scented poop bags come with a random colored bone shape dispenser. The poop bags are made with d2w pro-degradant. They are strong and thick (15 microns) and well sealed at the bottom. Our poop bags are also opaque colored to mask the contents. Our rolls are designed to fit most standard dispensers (1.25' in diameter). They are available in variety of colors and packaging.",
   },
   {
     category: "Pet Supplies",
@@ -64,7 +64,7 @@ export const data = [
       "PetSafe Multi-Tier Pet Fountain – Large Waterer Great for Cats and Dogs – 2 Heights to Drink From – Great for Senior Pets – 100 Oz Water Capacity – Fresh, Filtered Water",
     img: I5,
     price: 45.76,
-    detailDescription: "",
+    detailDescription: "Two tiers, two times the fun! The Multi-Tier Pet Fountain has an upper and lower bowl for your pet to drink from, keeping them happy and hydrated. Pets love running water and are drawn to it. Pet fountains entice pets to drink more water which keeps them healthy and hydrated. With this fountain, pets can drink from the flowing stream or from the bowl tiers (which is awesome) because your pet needs 1 ounce of water per 1 pound they weigh every day. The water constantly circulates which keeps things fresh and helps to promote good pet hygiene. The levels of this fountain make this great for pets of all sizes since they can drink water at a height that’s comfortable for them. This is especially great for senior pets, so they won’t have to bend down as much to drink from the upper tier. This fountain works hard to make sure your best friend will have fresh water. A carbon filter and fountain pump work together so your pet will always have clean water to drink. We’ve made this fountain easy to clean – simply place the fountain in the top rack of the dishwasher and hand wash the pump separately. Your pet deserves the best. Trust PetSafe to keep your pet healthy, safe and happy.",
   },
 
   {
@@ -74,7 +74,7 @@ export const data = [
       "PetSafe Replacement Grass for Large Pet Loo Portable Indoor Dog Potty Training System - Artificial Grass for Dogs, Speedy Drainage, Easy to Clean - Great Alternative to Puppy Pads or Dog Pee Pads",
     img: I6,
     price: 23.78,
-    detailDescription: "",
+    detailDescription: "The Pet Loo Replacement Grass is specifically designed to work with the Pet Loo Pet Toilet. The grass mat allows liquid to drain easily, offering less mess and easier cleanup. Make cleanup even simpler by having extra turf on hand for your pet to use while the other is being cleaned. PetSafe brand is here to help you and your pet LIVE HAPPY TOGETHER.",
   },
   {
     category: "indoor & outdoor supplies",
@@ -82,7 +82,7 @@ export const data = [
     productDescription: "Bliss Hammocks BH-400C-HP, 40' Wide, Hampton",
     img: I7,
     price: 54.78,
-    detailDescription: "",
+    detailDescription: "This versatile full size Brazilian style hammock brings together tradition and comfort. Made with a polyester/cotton blended fabric also gives you the durability you need to get by the seasons ahead. Reinforced steel Hammock loops for durability.",
   },
   {
     category: "indoor & outdoor supplies",
@@ -91,7 +91,7 @@ export const data = [
       "Lewis N. Clark Brushed Twill Hanging Toiletry Kit Bag for Travel Accessories, Shampoo, Cosmetics + Personal Items, Gray, One_Size",
     img: I8,
     price: 23.67,
-    detailDescription: "",
+    detailDescription: "This travel organizer has an attached strong strap with a wide hook, so it easily hangs from most bathroom doors, shower rods, or towel racks. Fast access to all your toiletries and keeps countertops free of cosmetics, deodorant, toothpaste, and more. Stay organized with zippered mesh pockets and TPU pockets (to keep wet and dry items separate), and elastic straps to help secure items during travel. A great unisex option and can act as a cosmetic bag or makeup bag. It’s also a perfect shave bag for men. The only mens and womens toiletry bag you’ll ever need. LIGHTWEIGHT + DURABLE: Weighing less than 6oz and made with brushed twill material, this toiletry bag and make up bag easily fits into your luggage or carry on. Measures 18in x 9in x 3. 5in (opened) and 8. 5in x 9in x 3. 5in (closed). Available in gray or green",
   },
   {
     category: "indoor & outdoor supplies",
@@ -100,7 +100,7 @@ export const data = [
       "Jungle Gym Kingdom Swing Set Hangers - 2 Heavy Duty Brackets with Locking Snap Hooks for Porch, Patio, Playground - Indoor/Outdoor Hardware & Accessories",
     img: I9,
     price: 67.88,
-    detailDescription: "",
+    detailDescription: "Easy to Assemble - These swing set parts are great for DIYers who want a no-fuss porch swing hanging kit.Durable - Swing away on your yoga trapeze! This metal swing set hardware is strong enough to hold up to 2400 lbsIndoors & Outdoors - Our heavy duty swing hangers make the perfect addition to your aerial yoga studio or playground set. Quiet - Squeaky wooden swing set no more! The patio swing parts prevent metal rubbing for a smooth swing ride. Multi-Use - Designed for safety, these swing hooks can be used for your toddler swing set, gymnastics rings, & more.",
   },
   {
     category: "indoor & outdoor supplies",
@@ -109,7 +109,7 @@ export const data = [
       "RAD Cycle Products Adjustable Bike Trainer Fitness Desk Portable Workstation Standing Desk",
     img: I10,
     price: 34.55,
-    detailDescription: "",
+    detailDescription: "►ADJUSTABLE HEIGHT: Quickly raise and lower the tabletop from 33.5' to 47' ► PORTABLE: Locking casters allow for secure positioning, and moving from the workout to the office.►NON-SLIP SURFACE: The desktop features a non-slip surface that features built in tablet and smart phone slots ►VERSATILE: The tabletop includes holes for cable management ►DURABLE: The steel construction of the frame will ensure that the RAD Cycle Products Adjustable Bike Trainer Fitness Desk Portable Workstation will hold up to years of use.",
   },
 
   {
@@ -129,7 +129,7 @@ export const data = [
       "Silicone Cooking Utensil Set, 14pcs Kitchen Utensils Set Non-stick Heat Resistant Cookware Copper Stainless Steel Handle",
     img: I12,
     price: 44.44,
-    detailDescription: "",
+    detailDescription: "From the simplest side dish to the most elaborate entrée, they’re all made up of tiny tasks like stirring, flipping, serving, and plating. And this versatile set of Silicone Tools helps you tackle them all. With stainless steel handles and silicone heads, they combine the best qualities of both materials. The silicone makes them inherently flexible and nonstick, while the stainless steel offers better sturdiness and leverage. Combined, it makes these tools especially helpful when mixing or spreading thick, sticky foods like batter or frosting. They’re also incredibly safe, since they can be used with nonstick cookware and resist heat up to 450°F. These tools are so well-designed, they won a prestigious Good Design Award in the Tabletop Category for exhibiting superior quality, innovative form, and excellent function. This set includes a: spatula, spoonula, jar scraper, mini jar scraper and mini spoonula.",
   },
   {
     category: "Kitchen Supplies",
@@ -138,7 +138,7 @@ export const data = [
       "DII Damask Kitchen Collection Kitchen Set, 12 x 6.5 , Black",
     img: I13,
     price: 19.99,
-    detailDescription: "",
+    detailDescription: "DII offers full collections of trend based designs, bringing you fresh, innovative lines of quality home products for every season. Let DII products become a valuable part of your life.",
   },
   {
     category: "Kitchen Supplies",
@@ -146,7 +146,7 @@ export const data = [
     productDescription: ",Mud Pie Marble Trivet 1 1/4' x 8 1/2' dia, Gold",
     img: I14,
     price: 30,
-    detailDescription: "",
+    detailDescription: "Footed marble trivet features gold foil raw edge rim.",
   },
   {
     category: "Kitchen Supplies",

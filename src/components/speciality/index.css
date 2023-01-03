@@ -1,6 +1,6 @@
 .Special{
     width:35%;
-    margin: auto;
+    margin:100px auto auto auto;
 }
 
 .specialTitle{
@@ -24,6 +24,7 @@
 .divv{
     margin-bottom: 40px;
     margin-top: 10px;
+
 }
 .circleBox{
     /* margin-left: 38%; */

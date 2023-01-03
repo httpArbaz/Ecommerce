@@ -21,22 +21,26 @@
   text-align: center;
 }
 
-.title{
-    font-size: xxx-large;
-    font-family: 'Poppins',sans-serif;
+.title {
+   font-size: xxx-large;
+   
+
+
+  font-family: "Libre Baskerville", serif;
+  line-height: 45px;
+  text-align: center;
+  text-shadow: 0 1px 1px #fff;
+  padding-top: 20px;
 }
 
-
-@media only  screen and (max-width:800px){
-    .title{
-        font-size:xx-large;
-    }
-
+@media only screen and (max-width: 800px) {
+  .title {
+    font-size: xx-large;
+  }
 }
 
-@media only  screen and (max-width:800px){
-    .title{
-        font-size:x-large;
-    }
-
+@media only screen and (max-width: 800px) {
+  .title {
+    font-size: x-large;
+  }
 }

@@ -1,9 +1,17 @@
+.footerHead{
+    background-color: whitesmoke;
+    padding-bottom: 10px;
+    
+    
+}
+
 .Footer{
     width: 70%;
     margin: 200px auto auto auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 100px;
     /* align-items: center; */
 }
 
@@ -60,8 +68,9 @@
 
 .social{
     /* width: 50%; */
-    margin: auto;
-   
+    /* margin: auto; */
+   display: flex;
+   justify-content: space-between;
 }
 
 .Footericons{
@@ -86,6 +95,12 @@
     }
 
     .menuChild{
+        align-items: center;
+    }
+
+    .social{
+        flex-direction: column;
+        margin: auto;
         align-items: center;
     }
 

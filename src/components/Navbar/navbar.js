@@ -24,9 +24,10 @@ function Navbar() {
       {matches ? (
         <Hamburger />
       ) : (
+   
         <div className="Navbar">
   <Link to="/">
-          <img alt="etrolly"  height={100} width={100} src={Etrolly}/>
+          <img alt="etrolly"  height={80} width={100} src={Etrolly}/>
           </Link>
           <div data-aos="fade-left" className="RightNavigations">
             <a href="/" className="anchor">
@@ -48,6 +49,7 @@ function Navbar() {
             <p style={{position:"absolute",bottom:"11px",marginLeft:"3vh",color:"black",fontSize:"16px",fontWeight:"bolder"}}>{value.length}</p>
             </Link>
           </div>
+  
         </div>
       )}
     </>

@@ -3,8 +3,10 @@ import "./index.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import TrendingUpSharpIcon from "@mui/icons-material/TrendingUpSharp";
-import CurrencyExchangeSharpIcon from "@mui/icons-material/CurrencyExchangeSharp";
 import ThumbUpAltSharpIcon from "@mui/icons-material/ThumbUpAltSharp";
+
+import MonetizationOnSharpIcon from '@mui/icons-material/MonetizationOnSharp';
+
 
 function Business() {
   useEffect(() => {
@@ -22,35 +24,38 @@ function Business() {
       </p>
 
       <div className="businessBox">
-        <div data-aos="fade-right"  className="Boxes">
-            <div className="BoxesInside">
-          <div className="businessIconCircle">
-            <TrendingUpSharpIcon className="icon" />
+        <box className="BoxHead">
+          <div data-aos="fade-right" className="Boxes"></div>
 
+          <div className="BoxesInside">
+            <div className="businessIconCircle">
+              <TrendingUpSharpIcon className="icon" />
+            </div>
+            <h3>Grow your revenue by 25% in Q4</h3>
           </div>
-          <h3>Grow your revenue by 25% in Q4</h3>
-        </div>
-        </div>
-        <div data-aos="fade-top" className="Boxes">
-            
-         <div className="BoxesInside">
-          <div className="businessIconCircle">
-            <CurrencyExchangeSharpIcon className="icon" />
-   
-          </div>
+        </box>
 
-          <h3>Expand your market share while enjoying cost efficiencie</h3>
-        </div>
-        </div>
+        <box className="BoxHead">
+          <div data-aos="fade-right" className="Boxes2"></div>
 
-        <div data-aos="fade-left" className="Boxes">
-         <div className="BoxesInside">
-          <div className="businessIconCircle">
-            <ThumbUpAltSharpIcon className="icon" />
+          <div className="BoxesInside">
+            <div className="businessIconCircle">
+              <MonetizationOnSharpIcon  className="icon" />
+            </div>
+            <h3>Grow your revenue by 25% in Q4</h3>
           </div>
-          <h3>Utilize top notch technologies to gain competitive advantage</h3>
-        </div>
-        </div>
+        </box>
+
+        <box className="BoxHead">
+          <div data-aos="fade-right" className="Boxes3"></div>
+
+          <div className="BoxesInside">
+            <div className="businessIconCircle">
+              <ThumbUpAltSharpIcon className="icon" />
+            </div>
+            <h3>Grow your revenue by 25% in Q4</h3>
+          </div>
+        </box>
       </div>
     </div>
   );
