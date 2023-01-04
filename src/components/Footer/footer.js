@@ -73,7 +73,7 @@ function Footer() {
           />
             </div>
 
-            <img src={Etrolly} alt="etrolly" height={100} width={100} />
+       
         
         </div>
 
@@ -90,10 +90,13 @@ function Footer() {
             ©2023{" "}
             <p style={{ fontWeight: "600", marginLeft: "5px" }}> Etrolly </p>
           </p>
+          <div className="footerMenuInside"> 
+          <img data-aos="fade-left" src={Etrolly} alt="etrolly" height={100} width={100} />
           <p data-aos="fade-left" className="childTitle highlight">
-            powered by the{" "}
-            <p style={{ fontWeight: "600", marginLeft: "5px" }}> Etrolly </p>
-          </p>
+            powered by the </p>
+        
+            <p data-aos="fade-left" style={{ fontWeight: "600", marginLeft:"10px",marginBottom:"20px"}}> Etrolly </p>
+            </div>
         </div>
       </div>
     </div>

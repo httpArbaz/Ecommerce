@@ -2,10 +2,7 @@ import React, { useEffect } from "react";
 import "./index.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import TrendingUpSharpIcon from "@mui/icons-material/TrendingUpSharp";
-import ThumbUpAltSharpIcon from "@mui/icons-material/ThumbUpAltSharp";
 
-import MonetizationOnSharpIcon from '@mui/icons-material/MonetizationOnSharp';
 
 
 function Business() {
@@ -28,10 +25,10 @@ function Business() {
           <div data-aos="fade-right" className="Boxes"></div>
 
           <div className="BoxesInside">
-            <div className="businessIconCircle">
+            {/* <div className="businessIconCircle">
               <TrendingUpSharpIcon className="icon" />
-            </div>
-            <h3>Grow your revenue by 25% in Q4</h3>
+            </div> */}
+            <h3>Grow your revenue by 25% in Q4 Grow your revenue by 25% in Q4 Grow your revenue b</h3>
           </div>
         </box>
 
@@ -39,10 +36,10 @@ function Business() {
           <div data-aos="fade-right" className="Boxes2"></div>
 
           <div className="BoxesInside">
-            <div className="businessIconCircle">
+            {/* <div className="businessIconCircle">
               <MonetizationOnSharpIcon  className="icon" />
-            </div>
-            <h3>Grow your revenue by 25% in Q4</h3>
+            </div> */}
+            <h3>Grow your revenue by 25% in Q4 Grow your revenue by 25% in Q4 Grow your revenue b</h3>
           </div>
         </box>
 
@@ -50,10 +47,10 @@ function Business() {
           <div data-aos="fade-right" className="Boxes3"></div>
 
           <div className="BoxesInside">
-            <div className="businessIconCircle">
+            {/* <div className="businessIconCircle">
               <ThumbUpAltSharpIcon className="icon" />
-            </div>
-            <h3>Grow your revenue by 25% in Q4</h3>
+            </div> */}
+            <h3>GGrow your revenue by 25% in Q4 Grow your revenue by 25% in Q4 Grow</h3>
           </div>
         </box>
       </div>

@@ -1,11 +1,13 @@
 .Banner {
-  height: 60vh;
+  height: 70vh;
   background-image: url("../../content/images/timeline.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 100px;
-  width: 100%;
+  margin: 100px auto auto auto;
+  width: 90%;
+  border-radius: 5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   /* margin: auto; */
   /* padding-top: 20vh; */
 }
@@ -42,5 +44,22 @@
 @media only screen and (max-width: 800px) {
   .title {
     font-size: x-large;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: x-large;
+  }
+
+  .Banner{
+    border-radius: 0rem;
+    width: 100%;
+    height: 60vh;
+  }
+
+  .BannerTitle{
+    width: 75%;
   }
 }

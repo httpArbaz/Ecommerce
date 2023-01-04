@@ -1,5 +1,5 @@
 .footerHead{
-    background-color: whitesmoke;
+    background-color: #c7d4e7;
     padding-bottom: 10px;
     
     
@@ -42,7 +42,7 @@
 }
 
 .FootAnchor:hover{
-    color: #fc5f5f;
+    color: #ad449b;
     transition: all .2s linear;
 }
 .headTitle{
@@ -70,7 +70,7 @@
     /* width: 50%; */
     /* margin: auto; */
    display: flex;
-   justify-content: space-between;
+   justify-content: flex-start;
 }
 
 .Footericons{
@@ -84,6 +84,12 @@
     align-items: center;
 }
 
+
+.footerMenuInside{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+}
 @media only  screen and (max-width:700px){
     .FooterMenu{
         flex-direction: column;
@@ -104,10 +110,19 @@
         align-items: center;
     }
 
+    .footerMenuInside{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin-right: 50px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
 }
 
 
-@media only  screen and (max-width:350px){
+@media only  screen and (max-width:390px){
 
     .headTitle{
         color:#2b2f38;
@@ -119,7 +134,7 @@
     .childTitle{
         color:#2b2f38;
         font-family: 'Poppins',sans-serif;
-        font-size: 14px;
+        font-size: 16px;
         font-weight:400
         
     
@@ -128,5 +143,10 @@
     .Footericons{
         margin: 15px;
         
+    }
+
+    .Footer{
+        width: 80%;
+        /* margin-bottom: 20px; */
     }
 }
