@@ -11,6 +11,7 @@
   width: 80%;
   margin: auto;
   display: flex;
+  padding-top: 100px;
   justify-content: flex-start;
 }
 
@@ -64,6 +65,10 @@
     width: 92%;
   }
 
+  .heroContent{
+    padding-top: 20px;
+  }
+
   .HeroTypoCont{
     width: 80%;
   }
@@ -78,6 +83,7 @@
     /* font-size: 35px; */
     /* line-height: 40px; */
     font-family: 'Poppins', sans-serif;
+  
   }
   
   .heroTitle{
