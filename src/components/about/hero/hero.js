@@ -12,7 +12,7 @@ function HeroAbout() {
     <div >
       <div className="AboutHero">
         <h1 data-aos="fade-top" className="AboutTitle">
-        About Etrolly
+        {/* About Etrolly */}
         </h1>
       </div>
 
