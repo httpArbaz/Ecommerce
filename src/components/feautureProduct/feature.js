@@ -13,9 +13,6 @@ function Feature() {
     return data.category.replace(/\s/g, "").toLowerCase() === slug;
   });
   // setStataeCategory(singalCategory[0].category)
-
-
-  console.log(slug, "nav sliugs");
  useEffect(() => {
   if(singalCategory.length){
 
@@ -23,7 +20,6 @@ function Feature() {
   }
  }, [slug,singalCategory])
  
-console.log(statecategory,"statae")
 
 
   return (
