@@ -91,11 +91,11 @@ function Footer() {
             <p style={{ fontWeight: "600", marginLeft: "5px" }}> Etrolly </p>
           </p>
           <div className="footerMenuInside"> 
-          <img data-aos="fade-left" src={Etrolly} alt="etrolly" height={100} width={100} />
-          <p data-aos="fade-left" className="childTitle highlight">
+          <img data-aos="fade-top" src={Etrolly} alt="etrolly" height={100} width={100} />
+          <p data-aos="fade-top" className="childTitle highlight">
             powered by the </p>
         
-            <p data-aos="fade-left" style={{ fontWeight: "600", marginLeft:"10px",marginBottom:"20px"}}> Etrolly </p>
+            <p data-aos="fade-top" style={{ fontWeight: "600", marginLeft:"10px",marginBottom:"20px"}}> Etrolly </p>
             </div>
         </div>
       </div>

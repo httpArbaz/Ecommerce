@@ -73,7 +73,7 @@ function Hamburger() {
               <p
                 style={{
                   position: "absolute",
-                  bottom: "40px",
+                  bottom: "28px",
                   marginLeft: "2.5vh",
                   color: "black",
                   fontSize: "16px",
