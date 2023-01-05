@@ -1,6 +1,6 @@
 .Banner {
   height: 70vh;
-  background-image: url("../../content/images/timeline.jpg");
+  /* background-image: url("../../content/images/timeline.jpg"); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,6 +21,7 @@
   width: 50%;
   margin: auto;
   text-align: center;
+  color: white;
 }
 
 .title {
@@ -31,7 +32,7 @@
   font-family: "Libre Baskerville", serif;
   line-height: 45px;
   text-align: center;
-  text-shadow: 0 1px 1px #fff;
+  /* text-shadow: 0 1px 1px #fff; */
   padding-top: 20px;
 }
 
