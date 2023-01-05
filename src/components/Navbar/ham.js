@@ -42,6 +42,7 @@ function Hamburger() {
         style={{ position: "absolute", zIndex: "1" }}
         maxWidth="lg"
         disableGutters="true"
+   
       >
         <Toolbar
           style={{
@@ -55,6 +56,7 @@ function Hamburger() {
             alignItems: "center",
             Margin: "auto",
           }}
+          className="hamm"
         >
           <div style={{ display: "flex", alignItems: "center" }}>
             <div style={{ marginRight: "10px" }}>
@@ -111,7 +113,7 @@ function Hamburger() {
 
           {/* <h2>Etrolly</h2> */}
           <Link to="/">
-          <img style={{marginLeft:"-20px"}} alt="etrolly" src={Etrolly} height={100} width={100} />
+          <img style={{marginLeft:"-20px"}} alt="etrolly" src={Etrolly}  width={100} />
           </Link>
           {/* The outside of the drawer */}
 

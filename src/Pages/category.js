@@ -22,7 +22,7 @@ export default function Category() {
           // backgroundPosition: "center center",
           // backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          height: matches===true   ? "40vh": "85vh",
+          height: matches===true   ? "60vh": "85vh",
           width:"100%",
           objectFit:"cover",
           filter:"brightness(80%)"
