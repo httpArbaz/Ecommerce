@@ -1,6 +1,8 @@
 .footerHead{
-    background-color: #9eb4d3;
+    /* background-color: #9eb4d3; */
     padding-bottom: 10px;
+    background: rgb(144,170,205);
+background: linear-gradient(17deg, rgba(144,170,205,1) 0%, rgba(199,212,231,1) 75%);
     
     
 }
