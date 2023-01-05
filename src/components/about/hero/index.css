@@ -9,8 +9,8 @@
   flex-direction: column;
   justify-content: center;
   filter: brightness(60%);
-  border-bottom-left-radius: 8rem;
-  border-bottom-right-radius: 8rem;
+  /* border-bottom-left-radius: 8rem;
+  border-bottom-right-radius: 8rem; */
 }
 
 .AboutTitle {
@@ -97,11 +97,11 @@
   }
 
   .AboutHero {
-    height: 70vh;
+    height: 80vh;
 
     padding-top: 0vh;
-    border-bottom-left-radius: 6rem;
-    border-bottom-right-radius: 6rem;
+    /* border-bottom-left-radius: 6rem;
+    border-bottom-right-radius: 6rem; */
   }
 }
 
