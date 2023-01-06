@@ -14,9 +14,9 @@ function Footer() {
   }, []);
   return (
     <div className="footerHead">
-      <div className="Footer">
+      <div  className="Footer">
         <div className="FooterMenu">
-          <div data-aos="fade-top" className="menuChild">
+          <div  className="menuChild">
             <p className="headTitle">The Name You Trust</p>
             <p className="childTitle"> Speed || Reliability || Quality</p>
           </div>
@@ -47,7 +47,7 @@ function Footer() {
             </Link>
           </div>
         </div>
-        <div data-aos="fade-top" className="social">
+        <div  className="social">
             <div>
             <FacebookIcon
             style={{
@@ -85,17 +85,17 @@ function Footer() {
           {/* <img src={Etrolly} alt="etrolly" height={100} width={100} /> */}
         </div>
         <div style={{ marginBottom: "55px" }} className="FooterMenu">
-          <p data-aos="fade-right" className="childTitle highlight">
+          <p  className="childTitle highlight">
             {" "}
             ©2023{" "}
             <p style={{ fontWeight: "600", marginLeft: "5px" }}> Etrolly </p>
           </p>
           <div className="footerMenuInside"> 
-          <img data-aos="fade-top" src={Etrolly} alt="etrolly" height={100} width={100} />
-          <p data-aos="fade-top" className="childTitle highlight">
+          <img  src={Etrolly} alt="etrolly" height={100} width={100} />
+          <p  className="childTitle highlight">
             powered by the </p>
         
-            <p data-aos="fade-top" style={{ fontWeight: "600", marginLeft:"10px",marginBottom:"20px"}}> Etrolly </p>
+            <p  style={{ fontWeight: "600", marginLeft:"10px",marginBottom:"20px"}}> Etrolly </p>
             </div>
         </div>
       </div>
