@@ -1,6 +1,6 @@
 .StoreHero {
-    height: 60vh;
-    background-image: url("../../content/images/con4.jpg");
+    height: 80vh;
+    background-image: url("../../content/images/herr4.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,6 +23,10 @@
   
   
   @media only  screen and (max-width:500px){
+
+    .StoreHero{
+      height: 50vh;
+    }
     
   
     .contactTitle{

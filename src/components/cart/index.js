@@ -31,6 +31,10 @@ function CartComponent() {
   const [zip,setZip] = useState()
   const matches = useMediaQuery('(max-width:800px)');
 
+
+
+
+
   // const Submit = () => {
     useEffect(() => {
       if (!name || !lastName || !address || !city || !phone || !email || !zip) {
