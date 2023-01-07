@@ -35,8 +35,13 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #ad449b;
+    background-color: #406caa;
     margin: auto;
+}
+
+.circle:hover{
+    background-color: #ad449b;
+
 }
 
 .circleText{
