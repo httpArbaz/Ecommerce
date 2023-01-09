@@ -15,8 +15,9 @@ function Hero() {
             Most efficient ecommerce platform
           </h3>
           <h2 className="HeroHead" data-aos="fade-right">
-            The Etrolly is a trusted e-commerce marketplace that connects
-            thousands of buyers and sellers together, everyday.
+            Etrolly is a trusted e-commerce platform that helps you to grow and
+            build better connections with a diverse community of buyers and
+            sellers every day.
           </h2>
           <Link to={"/store"}>
             <button data-aos="fade-right" className="themeButton">
