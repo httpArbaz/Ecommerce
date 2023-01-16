@@ -30,9 +30,9 @@ function Navbar() {
           <img alt="etrolly"  height={80} width={100} src={Etrolly}/>
           </Link>
           <div data-aos="fade-left" className="RightNavigations">
-            <a href="/" className="anchor">
+            <Link to="/" className="anchor">
               Home
-            </a>
+            </Link>
 
             <StoreButton />
             <Link to="/about" className="anchor">
