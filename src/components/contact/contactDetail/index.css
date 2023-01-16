@@ -175,6 +175,8 @@
   .boxText > p {
     font-size: 12px;
     text-align: center;
+    width: 70%;
+    margin: auto;
   }
 
   .contactMain > h1 {
@@ -215,4 +217,6 @@
     text-align: center;
     width: 80%;
   }
+
+ 
 }

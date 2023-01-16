@@ -2,18 +2,15 @@ import React, { useState, useEffect } from "react";
 import "./index.css";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import TextField from "@mui/material/TextField";
-import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import useMediaQuery from '@mui/material/useMediaQuery';
+import MarkEmailReadIcon from "@mui/icons-material/MarkEmailRead";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-
-
-
 function ContactDetail() {
-  const matches = useMediaQuery('(max-width:800px)');
-  const matchesPro = useMediaQuery('(max-width:1150px)');
+  const matches = useMediaQuery("(max-width:800px)");
+  const matchesPro = useMediaQuery("(max-width:1150px)");
   const [success, setSuccess] = useState(false);
   const [fail, setFail] = useState(false);
   const [name, setName] = useState();
@@ -41,16 +38,19 @@ function ContactDetail() {
 
   return (
     <div className="contactMain">
-      <h1     data-aos="fade-right">Contact Details</h1>
+      <h1 data-aos="fade-right">Contact Details</h1>
       <div className="ContactDetail">
         <div className="Detail">
           {/* location / email / call boxes */}
-          <div     data-aos="fade-top" className="DetailContainer">
+          <div data-aos="fade-top" className="DetailContainer">
             <div className="detailBox">
-              <LocationOnIcon className="iconColor" />              
+              <LocationOnIcon className="iconColor" />
               <div className="boxText">
                 <h2>Our Location</h2>
-                <p>ETROLLY LLC, 35644 AVALON PARK EAST BLVD SITE 1-A896 ORLANDO, FL 32828-7365 </p>
+                <p>
+                  ETROLLY LLC, 35644 AVALON PARK EAST BLVD SITE 1-A896 ORLANDO,
+                  FL 32828-7365{" "}
+                </p>
               </div>
             </div>
 
@@ -58,12 +58,12 @@ function ContactDetail() {
               <MarkEmailReadIcon className="iconColor" />
               <div className="boxText">
                 <h2>Call Us</h2>
-                <p>03208218168 , 03208218168</p>
+                <p>+1 (407) 214-7915</p>
               </div>
             </div>
 
             <div className="detailBox">
-              <LocalPhoneIcon className="iconColor"/>
+              <LocalPhoneIcon className="iconColor" />
               <div className="boxText">
                 <h2>Our Email </h2>
                 <p>etrollystore@gmail.com</p>
@@ -74,8 +74,10 @@ function ContactDetail() {
           {/* form */}
 
           <div>
-            <h1     data-aos="fade-right" className="msgText">Send Us a Message</h1>
-            <div     data-aos="fade-top" className="FormContact">
+            <h1 data-aos="fade-right" className="msgText">
+              Send Us a Message
+            </h1>
+            <div data-aos="fade-top" className="FormContact">
               {success === true ? (
                 <p className="success">
                   Thanks for contacting us! We will be in touch with you
@@ -84,7 +86,7 @@ function ContactDetail() {
               ) : (
                 <>
                   <TextField
-                    sx={{ width: "80%",marginBottom:"20px" }}
+                    sx={{ width: "80%", marginBottom: "20px" }}
                     id="outlined-basic"
                     label="Name"
                     value={name}
@@ -115,10 +117,7 @@ function ContactDetail() {
                 </>
               )}
               {fail === true ? (
-                <p className="fail">
-                  {" "}
-                  Please Fill All The fields
-                </p>
+                <p className="fail"> Please Fill All The fields</p>
               ) : null}
 
               {success === true ? null : (
@@ -132,8 +131,8 @@ function ContactDetail() {
 
         <div className="detailMap">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.943128656487!2d67.07869629999999!3d24.865791899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33ea5099a9557%3A0x8e4a0023e54460ec!2sSharah-e-Faisal%20Service%20Rd%2C%20Karachi%20Memon%20Co-operative%20Housing%20Society%20PECHS%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh!5e0!3m2!1sen!2s!4v1671747187161!5m2!1sen!2s"
-            width={ matches === true ? 300 : matchesPro === true ? 350 : 400}
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.936033450246!2d-81.15631278505423!3d28.51157219629631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e75d8f20179927%3A0xbc7f483eddb49908!2sAvalon%20Park%20E%20Blvd%2C%20Florida%2032828%2C%20USA!5e0!3m2!1sen!2s!4v1673893379848!5m2!1sen!2s"
+            width={matches === true ? 300 : matchesPro === true ? 350 : 400}
             height={550}
             style={{ border: 0 }}
             allowFullScreen
@@ -141,6 +140,10 @@ function ContactDetail() {
             title="etrally"
             referrerPolicy="no-referrer-when-downgrade"
           />
+
+
+
+        
         </div>
       </div>
     </div>
