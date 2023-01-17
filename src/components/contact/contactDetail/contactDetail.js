@@ -66,7 +66,7 @@ function ContactDetail() {
               <LocalPhoneIcon className="iconColor" />
               <div className="boxText">
                 <h2>Our Email </h2>
-                <p>etrollystore@gmail.com</p>
+                <p>info@etrollystore.com</p>
               </div>
             </div>
           </div>
