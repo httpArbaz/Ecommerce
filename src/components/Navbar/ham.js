@@ -37,12 +37,11 @@ function Hamburger() {
   };
 
   return (
-    <div >
+    <div>
       <Container
         style={{ position: "absolute", zIndex: "1" }}
         maxWidth="lg"
         disableGutters="true"
-   
       >
         <Toolbar
           style={{
@@ -60,7 +59,7 @@ function Hamburger() {
         >
           <div style={{ display: "flex", alignItems: "center" }}>
             <div style={{ marginRight: "10px" }}>
-              <Link to="/cart">
+              {/* <Link to="/cart">
               <AddShoppingCartSharpIcon
                 className="anchor"
                 style={{
@@ -82,7 +81,7 @@ function Hamburger() {
               >
                 {value.length}
               </p>
-              </Link>
+              </Link> */}
             </div>
 
             <IconButton
@@ -113,7 +112,12 @@ function Hamburger() {
 
           {/* <h2>Etrolly</h2> */}
           <Link to="/">
-          <img style={{marginLeft:"-20px"}} alt="etrolly" src={Etrolly}  width={100} />
+            <img
+              style={{ marginLeft: "-20px" }}
+              alt="etrolly"
+              src={Etrolly}
+              width={100}
+            />
           </Link>
           {/* The outside of the drawer */}
 
@@ -158,18 +162,21 @@ function Hamburger() {
                 <Divider sx={{ mb: 2 }} />
 
                 <Box sx={{ mb: 2 }}>
-
-                  <Link  onClick={toggleDrawer(false)}     style={{ textDecoration: "none", color: "black" }} to="/">
-                  <ListItemButton>
-                    <ListItemIcon>
-                      <AddHomeWorkSharpIcon sx={{ color: "darkGray" }} />
-                    </ListItemIcon>
-                    <ListItemText primary="Home" />
-                  </ListItemButton>
+                  <Link
+                    onClick={toggleDrawer(false)}
+                    style={{ textDecoration: "none", color: "black" }}
+                    to="/"
+                  >
+                    <ListItemButton>
+                      <ListItemIcon>
+                        <AddHomeWorkSharpIcon sx={{ color: "darkGray" }} />
+                      </ListItemIcon>
+                      <ListItemText primary="Home" />
+                    </ListItemButton>
                   </Link>
 
-                  <Link
-                  onClick={toggleDrawer(false)}
+                  {/* <Link
+                    onClick={toggleDrawer(false)}
                     style={{ textDecoration: "none", color: "black" }}
                     to="/store"
                   >
@@ -181,9 +188,9 @@ function Hamburger() {
                       </ListItemIcon>
                       <ListItemText primary="Store" />
                     </ListItemButton>
-                  </Link>
+                  </Link> */}
                   <Link
-                  onClick={toggleDrawer(false)}
+                    onClick={toggleDrawer(false)}
                     style={{ textDecoration: "none", color: "black" }}
                     to="/about"
                   >
@@ -195,7 +202,7 @@ function Hamburger() {
                     </ListItemButton>
                   </Link>
                   <Link
-                  onClick={toggleDrawer(false)}
+                    onClick={toggleDrawer(false)}
                     style={{ textDecoration: "none", color: "black" }}
                     to="/contact"
                   >
@@ -210,7 +217,7 @@ function Hamburger() {
                   </Link>
                 </Box>
               </Box>
-              <img src={Etrolly} alt="etrolly" height={100} width={100}/>
+              <img src={Etrolly} alt="etrolly" height={100} width={100} />
               {/* <h2>Etrolly</h2> */}
               {/* {search} */}
             </Box>

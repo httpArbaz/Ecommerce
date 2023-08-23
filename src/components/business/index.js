@@ -8,7 +8,7 @@ function Business() {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="Business">
+    <div className="Business" style={{ marginTop: "90px" }}>
       <h2 data-aos="fade-top" className="businessText">
         For Businesses
       </h2>
@@ -21,14 +21,14 @@ function Business() {
         activities.
       </p>
 
-      <div className="businessBox">
+      {/* <div className="businessBox">
         <box className="BoxHead">
           <div data-aos="fade-right" className="Boxes"></div>
 
           <div className="BoxesInside">
-            {/* <div className="businessIconCircle">
+             <div className="businessIconCircle">
               <TrendingUpSharpIcon className="icon" />
-            </div> */}
+            </div> 
             <h3>
             Generate a better revenue by 25% in Q4.
             </h3>
@@ -39,9 +39,9 @@ function Business() {
           <div data-aos="fade-right" className="Boxes2"></div>
 
           <div className="BoxesInside">
-            {/* <div className="businessIconCircle">
+             <div className="businessIconCircle">
               <MonetizationOnSharpIcon  className="icon" />
-            </div> */}
+            </div> 
             <h3>
             Get a better market share experience with cost effectiveness.
             </h3>
@@ -52,15 +52,15 @@ function Business() {
           <div data-aos="fade-right" className="Boxes3"></div>
 
           <div className="BoxesInside">
-            {/* <div className="businessIconCircle">
+            <div className="businessIconCircle">
               <ThumbUpAltSharpIcon className="icon" />
-            </div> */}
+            </div> 
             <h3>
             Analyse your new competitors with our top-notch technology.
             </h3>
           </div>
         </box>
-      </div>
+      </div> */}
     </div>
   );
 }

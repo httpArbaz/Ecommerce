@@ -38,7 +38,12 @@ function ContactDetail() {
 
   return (
     <div className="contactMain">
-      <h1 data-aos="fade-right">Contact Details</h1>
+      <h1
+        data-aos="fade-right"
+        style={{ display: "flex", justifyContent: "center" }}
+      >
+        Contact Details
+      </h1>
       <div className="ContactDetail">
         <div className="Detail">
           {/* location / email / call boxes */}
@@ -54,13 +59,13 @@ function ContactDetail() {
               </div>
             </div>
 
-            <div className="detailBox">
+            {/* <div className="detailBox">
               <MarkEmailReadIcon className="iconColor" />
               <div className="boxText">
                 <h2>Call Us</h2>
                 <p>+1 (407) 214-7915</p>
               </div>
-            </div>
+            </div> */}
 
             <div className="detailBox">
               <LocalPhoneIcon className="iconColor" />
@@ -74,7 +79,7 @@ function ContactDetail() {
           {/* form */}
 
           <div>
-            <h1 data-aos="fade-right" className="msgText">
+            {/* <h1 data-aos="fade-right" className="msgText">
               Send Us a Message
             </h1>
             <div data-aos="fade-top" className="FormContact">
@@ -125,11 +130,17 @@ function ContactDetail() {
                   Submit
                 </button>
               )}
-            </div>
+            </div> */}
           </div>
         </div>
-
-        <div className="detailMap">
+        <div className="detailBox">
+          <MarkEmailReadIcon className="iconColor" />
+          <div className="boxText">
+            <h2>Call Us</h2>
+            <p>+1 (407) 214-7915</p>
+          </div>
+        </div>
+        {/* <div className="detailMap">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.936033450246!2d-81.15631278505423!3d28.51157219629631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e75d8f20179927%3A0xbc7f483eddb49908!2sAvalon%20Park%20E%20Blvd%2C%20Florida%2032828%2C%20USA!5e0!3m2!1sen!2s!4v1673893379848!5m2!1sen!2s"
             width={matches === true ? 300 : matchesPro === true ? 350 : 400}
@@ -144,7 +155,7 @@ function ContactDetail() {
 
 
         
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -14,11 +14,11 @@ function Footer() {
   }, []);
   return (
     <div className="footerHead">
-      <div  className="Footer">
+      <div className="Footer">
         <div className="FooterMenu">
-          <div  className="menuChild">
+          <div className="menuChild">
             <p className="headTitle">The Name You Trust</p>
-            <p className="childTitle"> Speed || Reliability || Quality</p>
+            <p className="childTitle"> Reliability || Quality</p>
           </div>
 
           <div className="menuChild">
@@ -31,13 +31,13 @@ function Footer() {
             >
               About Us
             </Link>
-            <Link
+            {/* <Link
               onClick={() => window.scrollTo(0, 0)}
               className="FootAnchor"
               to="/store"
             >
               Visit Store
-            </Link>
+            </Link> */}
             <Link
               onClick={() => window.scrollTo(0, 0)}
               className="FootAnchor"
@@ -47,34 +47,31 @@ function Footer() {
             </Link>
           </div>
         </div>
-        <div  className="social">
-            <div>
+        <div className="social">
+          <div>
             <FacebookIcon
-            style={{
-              color: "#3b5998",
-            }}
-            className="Footericons"
-          />
-          <InstagramIcon
-            style={{
-              borderRadius: "3px",
-              color: "white",
-              background:
-                "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)",
-              //  color: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)'
-            }}
-            className="Footericons"
-          />
-          <YouTubeIcon
-            style={{
-              color: "#FF0000",
-            }}
-            className="Footericons"
-          />
-            </div>
-
-       
-        
+              style={{
+                color: "#3b5998",
+              }}
+              className="Footericons"
+            />
+            <InstagramIcon
+              style={{
+                borderRadius: "3px",
+                color: "white",
+                background:
+                  "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)",
+                //  color: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)'
+              }}
+              className="Footericons"
+            />
+            <YouTubeIcon
+              style={{
+                color: "#FF0000",
+              }}
+              className="Footericons"
+            />
+          </div>
         </div>
 
         <Divider />
@@ -85,18 +82,26 @@ function Footer() {
           {/* <img src={Etrolly} alt="etrolly" height={100} width={100} /> */}
         </div>
         <div style={{ marginBottom: "55px" }} className="FooterMenu">
-          <p  className="childTitle highlight">
+          <p className="childTitle highlight">
             {" "}
             ©2023{" "}
             <p style={{ fontWeight: "600", marginLeft: "5px" }}> Etrolly </p>
           </p>
-          <div className="footerMenuInside"> 
-          <img  src={Etrolly} alt="etrolly" height={100} width={100} />
-          <p  className="childTitle highlight">
-            powered by the </p>
-        
-            <p  style={{ fontWeight: "600", marginLeft:"10px",marginBottom:"20px"}}> Etrolly </p>
-            </div>
+          <div className="footerMenuInside">
+            <img src={Etrolly} alt="etrolly" height={100} width={100} />
+            <p className="childTitle highlight">powered by the </p>
+
+            <p
+              style={{
+                fontWeight: "600",
+                marginLeft: "10px",
+                marginBottom: "20px",
+              }}
+            >
+              {" "}
+              Etrolly{" "}
+            </p>
+          </div>
         </div>
       </div>
     </div>

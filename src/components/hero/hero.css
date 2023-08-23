@@ -1,6 +1,6 @@
 .Hero {
   height: 85vh;
-  background-image: url("../../content/images/con4.jpg");
+  background-image: url("./elin-tabitha-1r0atpgKw7A-unsplash.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,105 +27,91 @@
 .HeroHead {
   font-size: 30px;
   line-height: 35px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-
-.heroTitle{
-    font-family: 'Poppins', sans-serif;
-    
+.heroTitle {
+  font-family: "Poppins", sans-serif;
 }
 
-.themeButton{
-    background-color: #406caa;
-    color:white;
-    padding: 15px;
-    width: 180px;
-    border: none;
-    border-radius:2rem ;
-    cursor: pointer;
+.themeButton {
+  background-color: #406caa;
+  color: white;
+  padding: 15px;
+  width: 180px;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
 }
 
-.themeButton:hover{
+.themeButton:hover {
   background-color: #ad449b;
-  
 }
 
-
-@media only  screen and (max-width:1150px){
-  .HeroTypoCont{
+@media only screen and (max-width: 1150px) {
+  .HeroTypoCont {
     width: 80%;
   }
 }
 
-@media only  screen and (max-width:800px){
-
-
-  .heroContent{
+@media only screen and (max-width: 800px) {
+  .heroContent {
     width: 92%;
   }
 
-  .heroContent{
+  .heroContent {
     padding-top: 20px;
   }
 
-  .HeroTypoCont{
+  .HeroTypoCont {
     width: 80%;
   }
-
 }
 
-@media only  screen and (max-width:700px){
-  .Hero{
+@media only screen and (max-width: 700px) {
+  .Hero {
     /* padding-top: 15vh; */
   }
   .HeroHead {
     /* font-size: 35px; */
     /* line-height: 40px; */
-    font-family: 'Poppins', sans-serif;
-  
-  }
-  
-  .heroTitle{
-      font-family: 'Poppins', sans-serif;
-      font-size: 20px;
-      
+    font-family: "Poppins", sans-serif;
   }
 
+  .heroTitle {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+  }
 }
 
-@media only  screen and (max-width:500px){
-
-  .Hero{
+@media only screen and (max-width: 500px) {
+  .Hero {
     /* padding-top: 15vh; */
     height: 70vh;
   }
-  .heroContent{
+  .heroContent {
     width: 92%;
   }
 
-  .HeroTypoCont{
+  .HeroTypoCont {
     width: 80%;
   }
 
+  .HeroHead {
+    font-size: 20px;
+    line-height: 25px;
+    font-family: "Poppins", sans-serif;
+  }
 
-.HeroHead {
-  font-size: 20px;
-  line-height: 25px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.heroTitle{
-    font-family: 'Poppins', sans-serif;
+  .heroTitle {
+    font-family: "Poppins", sans-serif;
     font-size: 14px;
-    
-}
+  }
 
-.heroButton{
-  width: 140px;
-  padding: 12px;
-  border-radius: 1.5rem;
-  margin-top: 20px;
-}
-
+  .heroButton {
+    width: 140px;
+    padding: 12px;
+    border-radius: 1.5rem;
+    margin-top: 20px;
+  }
 }

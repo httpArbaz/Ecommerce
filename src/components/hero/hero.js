@@ -19,11 +19,11 @@ function Hero() {
             build better connections with a diverse community of buyers and
             sellers every day.
           </h2>
-          <Link to={"/store"}>
+          {/* <Link to={"/store"}>
             <button data-aos="fade-right" className="themeButton">
               Shop Now
             </button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

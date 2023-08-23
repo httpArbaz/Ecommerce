@@ -1,158 +1,143 @@
-.Business{
-    width: 80%;
-    margin: auto auto auto auto;
-
+.Business {
+  width: 80%;
+  margin: auto auto auto auto;
 }
 
-.businessText{
-    color:#2b2f38;
-    font-family: 'Poppins',sans-serif;
-    text-align: center;
-    font-size: 35px;
-    
+.businessText {
+  color: #2b2f38;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 35px;
 }
 
 .Business > p {
+  text-align: center;
+  color: #808285;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 35px;
+  margin-bottom: 50px;
+}
+
+.businessBox {
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  justify-content: space-between;
+}
+
+/* .boxHead {
+} */
+
+.Boxes {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 340px;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #c6c6c6;
+  background-image: url("../../content/images/spe1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(40%);
+
+  /* margin: auto; */
+}
+
+.Boxes2 {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 340px;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #c6c6c6;
+  background-image: url("../../content/images/spe2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(40%);
+
+  /* margin: auto; */
+}
+
+.Boxes3 {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 340px;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #c6c6c6;
+  background-image: url("../../content/images/spe3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(40%);
+
+  /* margin: auto; */
+}
+
+.businessIconCircle {
+  /* margin: auto; */
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 4px solid #406caa;
+}
+
+.icon {
+  margin-top: 37%;
+  margin-left: 35%;
+  color: #ad449b;
+  /* font-size: 45px; */
+}
+
+.BoxesInside {
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 45%;
+  align-items: center;
+  position: relative;
+  bottom: 265px;
+  justify-content: center;
+}
+
+.BoxesInside > h3 {
+  text-align: center;
+  color: white;
+  width: 80%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .BoxesInside > h3 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .businessBox {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: space-between;
+  }
+
+  .Boxes {
+    margin-bottom: 30px;
+  }
+
+  .Business > p {
     text-align: center;
     color: #808285;
     font-weight: bolder;
-    font-size: 18px;
-    line-height: 35px;
+    font-size: 14px;
+    line-height: 25px;
     margin-bottom: 50px;
-}
-
-
-.businessBox{
-    display: grid;
-    grid-template-columns: 31% 31% 31%;
-    justify-content: space-between;
-}
-
-.boxHead{
-
-}
-
-.Boxes{
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    height: 340px;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #c6c6c6;
-    background-image: url("../../content/images/spe1.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(40%);
-  
-    /* margin: auto; */
-}
-
-.Boxes2{
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    height: 340px;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #c6c6c6;
-    background-image: url("../../content/images/spe2.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(40%);
-  
-    /* margin: auto; */
-}
-
-
-.Boxes3{
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    height: 340px;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #c6c6c6;
-    background-image: url("../../content/images/spe3.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(40%);
-  
-    /* margin: auto; */
-}
-
-
-.businessIconCircle{
-    /* margin: auto; */
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    border: 4px solid #406caa;   
-}
-
-.icon{
-    margin-top: 37%;
-    margin-left: 35%;
-    color:#ad449b;
-    /* font-size: 45px; */
-
-}
-
-.BoxesInside{
-    /* margin: auto; */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 45%;
-    align-items: center;
-    position: relative;
-    bottom: 265px;
-    justify-content: center;
-}
-
-.BoxesInside> h3{
-    text-align: center;
-    color:white;
-    width:80%
-}
-
-
-@media only  screen and (max-width:1200px){
-    .BoxesInside > h3{
-        font-size: 15px;
-       
-    }
-}
-
-
-@media only  screen and (max-width:700px){
-
-    .businessBox{
-        display: grid;
-        grid-template-columns: 100%;
-        justify-content: space-between;
-    }
-
-
-    .Boxes{
-        margin-bottom: 30px;
-    }
-
-    .Business > p {
-        text-align: center;
-        color: #808285;
-        font-weight: bolder;
-        font-size: 14px;
-        line-height: 25px;
-        margin-bottom: 50px;
-    }
-    
-    
-
+  }
 }
